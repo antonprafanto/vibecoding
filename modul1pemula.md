@@ -31,14 +31,14 @@ graph TD
     
     B -->|Dulu| C[📚 Belajar Coding<br/>Bertahun-tahun]
     C --> D[⌨️ Menulis Kode<br/>Manual]
-    D --> E[🐛 Debug & Fix<br/>Sendiri]
+    D --> E[🐛 Debug dan Fix<br/>Sendiri]
     E --> F[🚀 Produk Jadi<br/>Setelah lama]
     
     B -->|Sekarang| G[🤖 Partner dengan AI]
-    G --> H[💬 Jelaskan Ide<br/>dalam Bahasa Sehari-hari]
+    G --> H[💬 Jelaskan Ide dalam<br/>Bahasa Sehari-hari]
     H --> I[⚡ AI Generate<br/>Kode Otomatis]
-    I --> J[🔍 Review & Refine<br/>Bersama AI]
-    J --> K[🚀 Produk Jadi<br/>Dalam Hitungan Hari]
+    I --> J[🔍 Review dan Refine<br/>Bersama AI]
+    J --> K[🚀 Produk Jadi dalam<br/>Hitungan Hari]
     
     style A fill:#e1f5fe
     style F fill:#c8e6c9
@@ -114,22 +114,22 @@ flowchart TD
     S4 --> P
     S5 --> P
     
-    P --> P1[📝 List semua pihak:<br/>• Target users<br/>• Mentors<br/>• Potential customers]
+    P --> P1[📝 List semua pihak:<br/>Target users, Mentors, Potential customers]
     
     P1 --> A[🔄 A - Alternatives<br/>List semua opsi]
     
-    A --> A1[📋 Pilihan:<br/>• Lanjut belajar<br/>• Ship sekarang<br/>• Pivot<br/>• Stop project]
+    A --> A1[📋 Pilihan:<br/>Lanjut belajar, Ship sekarang, Pivot, Stop project]
     
     A1 --> D[⚖️ D - Decision<br/>Keputusan berdasarkan data]
     
     D --> D1{Evaluasi}
-    D1 -->|Customer feedback positif<br/>+ Resource cukup<br/>+ Market timing tepat| D2[🚀 SHIP!]
-    D1 -->|Feedback masih minim<br/>+ Perlu validasi lebih<br/>+ Teknis belum solid| D3[🔬 BUILD-TO-LEARN]
+    D1 -->|Customer feedback positif + Resource cukup + Market timing tepat| D2[🚀 SHIP!]
+    D1 -->|Feedback masih minim + Perlu validasi lebih + Teknis belum solid| D3[🔬 BUILD-TO-LEARN]
     
     D2 --> E[📄 E - Explanation<br/>Dokumentasi keputusan]
     D3 --> E
     
-    E --> E1[✍️ Catat:<br/>• Alasan keputusan<br/>• Kriteria sukses<br/>• Cara ukur progress]
+    E --> E1[✍️ Catat:<br/>Alasan keputusan, Kriteria sukses, Cara ukur progress]
     
     style Start fill:#e3f2fd
     style D2 fill:#c8e6c9
@@ -246,17 +246,17 @@ graph TD
     A[🎯 Goal: Sistem Login] --> B[🧠 AI MENTOR<br/>Planning Phase]
     
     B --> B1[💬 Prompt: Breakdown login system<br/>untuk Next.js + TypeScript]
-    B1 --> B2[📋 AI Response:<br/>• Security considerations<br/>• Recommended libraries<br/>• Step-by-step plan]
+    B1 --> B2[📋 AI Response:<br/>Security considerations, Recommended libraries, Step-by-step plan]
     
     B2 --> C[👨‍💻 AI TEAMMATE<br/>Implementation Phase]
     
-    C --> C1[💬 Prompt: Generate login components<br/>with JWT & Google OAuth]
-    C1 --> C2[⚡ AI generates:<br/>• Login component<br/>• Auth logic<br/>• OAuth integration<br/>• Protected routes]
+    C --> C1[💬 Prompt: Generate login components<br/>with JWT dan Google OAuth]
+    C1 --> C2[⚡ AI generates:<br/>Login component, Auth logic, OAuth integration, Protected routes]
     
     C2 --> D[🔍 AI REVIEWER<br/>Review Phase]
     
     D --> D1[💬 Prompt: Review code untuk<br/>security vulnerabilities]
-    D1 --> D2[🛡️ AI feedback:<br/>• Password hashing check<br/>• JWT handling review<br/>• Input validation tips<br/>• Security improvements]
+    D1 --> D2[🛡️ AI feedback:<br/>Password hashing check, JWT handling review, Input validation tips, Security improvements]
     
     D2 --> E{Kode sudah aman?}
     E -->|❌ Perlu perbaikan| F[🔧 Iterasi dengan AI<br/>untuk fix issues]
@@ -317,11 +317,11 @@ Bagian ini adalah jantung pembelajaran Anda! Kami telah merancang 4 project mini
 
 ```mermaid
 graph LR
-    A[🍳 Project 1<br/>Recipe Generator<br/><b>AI Integration Basics</b>] --> B[🎨 Project 2<br/>Personal Website<br/><b>UI Design with AI</b>]
+    A[🍳 Project 1<br/>Recipe Generator<br/>AI Integration Basics] --> B[🎨 Project 2<br/>Personal Website<br/>UI Design with AI]
     
-    B --> C[📊 Project 3<br/>Expense Tracker<br/><b>Data & Logic</b>]
+    B --> C[📊 Project 3<br/>Expense Tracker<br/>Data dan Logic]
     
-    C --> D[🤖 Project 4<br/>Chatbot Service<br/><b>Advanced AI</b>]
+    C --> D[🤖 Project 4<br/>Chatbot Service<br/>Advanced AI]
     
     E[📚 Skill Development] 
     E -.-> E1[Prompt Engineering]
@@ -356,13 +356,13 @@ flowchart TD
     
     Setup --> Plan[🧠 Planning dengan AI<br/>Breakdown struktur app]
     
-    Plan --> Plan1[💬 Prompt AI untuk:<br/>• App architecture<br/>• Code structure<br/>• Logic flow]
+    Plan --> Plan1[💬 Prompt AI untuk:<br/>App architecture, Code structure, Logic flow]
     
     Plan1 --> Code[👨‍💻 Implementation<br/>Generate code dengan AI]
     
-    Code --> Code1[⚡ AI generates:<br/>• Input validation<br/>• API integration<br/>• Output formatting<br/>• Error handling]
+    Code --> Code1[⚡ AI generates:<br/>Input validation, API integration, Output formatting, Error handling]
     
-    Code1 --> Test[🧪 Testing & Debug]
+    Code1 --> Test[🧪 Testing dan Debug]
     
     Test --> Test1{Aplikasi jalan?}
     Test1 -->|❌ Ada error| Debug[🔧 Debug dengan AI<br/>Copy-paste error message]
@@ -566,22 +566,22 @@ Diagram berikut menunjukkan bagaimana skill Anda berkembang melalui setiap proje
 graph TD
     subgraph Level1 ["🌱 Level 1: AI Basics"]
         P1[🍳 Recipe Generator]
-        P1 --> S1[✨ Skills Unlocked:<br/>• Basic prompt engineering<br/>• API integration<br/>• Input/output handling]
+        P1 --> S1[✨ Skills Unlocked:<br/>Basic prompt engineering, API integration, Input/output handling]
     end
     
     subgraph Level2 ["🌿 Level 2: Design Thinking"]
         P2[🎨 Personal Website]
-        P2 --> S2[✨ Skills Unlocked:<br/>• Visual design with AI<br/>• No-code development<br/>• User experience thinking]
+        P2 --> S2[✨ Skills Unlocked:<br/>Visual design with AI, No-code development, User experience thinking]
     end
     
     subgraph Level3 ["🌳 Level 3: Data Intelligence"]
         P3[📊 Expense Tracker]
-        P3 --> S3[✨ Skills Unlocked:<br/>• Data processing<br/>• Logic building<br/>• AI for analysis & insights]
+        P3 --> S3[✨ Skills Unlocked:<br/>Data processing, Logic building, AI for analysis dan insights]
     end
     
     subgraph Level4 ["🚀 Level 4: AI Mastery"]
         P4[🤖 Chatbot Service]
-        P4 --> S4[✨ Skills Unlocked:<br/>• Advanced prompt engineering<br/>• Conversation design<br/>• System integration]
+        P4 --> S4[✨ Skills Unlocked:<br/>Advanced prompt engineering, Conversation design, System integration]
     end
     
     Level1 --> Level2
