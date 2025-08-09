@@ -81,6 +81,8 @@ AI akan membantu Anda membuat struktur PRD yang mencakup:
 
 > **💡 Gunakan Bahasa Sehari-hari:** Anda tidak perlu menggunakan istilah teknis yang rumit. Jelaskan dengan bahasa yang Anda gunakan sehari-hari.
 
+---
+
 ### 🎯 **Bagian 2: Memecah Fitur Besar Menjadi Tugas Kecil**
 
 #### 💡 Mengapa Perlu Dipecah?
@@ -138,6 +140,8 @@ AI akan membantu memecah menjadi:
 6. Fitur download laporan ke Excel
 7. Kirim laporan otomatis via WhatsApp (advanced)
 ```
+
+---
 
 ### 💬 **Bagian 3: Teknik Dasar Minta AI Buatkan Kode (Prompt Engineering untuk Coding)**
 
