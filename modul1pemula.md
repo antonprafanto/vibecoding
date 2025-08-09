@@ -446,4 +446,4 @@ Setelah menyelesaikan keempat project, pastikan Anda sudah:
 | **No-code/Low-code** | Platform yang memungkinkan pembuatan aplikasi tanpa/dengan minimal coding |
 
 ---
-📌 **Next:** [Modul 2: Prompting & AI Collaboration - Seni Berkomunikasi dengan AI](link-ke-modul-2)
+📌 **Next:** [Modul 2: Prompting & AI Collaboration - Seni Berkomunikasi dengan AI](https://github.com/antonprafanto/vibecoding/blob/main/modul2pemula.md)
