@@ -220,6 +220,8 @@ Jelaskan dengan bahasa yang sangat sederhana ya!
 
 > **💡 Test Satu-Satu:** Kalau AI kasih kode panjang, minta dipecah jadi bagian-bagian kecil yang bisa ditest satu per satu.
 
+---
+
 ### 🎨 **Bagian 4: Template Percakapan untuk Berbagai Keperluan (Structured Prompts)**
 
 #### 💡 Setiap Jenis Pekerjaan Butuh Cara Bicara yang Beda
@@ -352,6 +354,8 @@ Anggap saya tidak paham teknologi. Gunakan analogi yang mudah dipahami.
 Tolong jelaskan alur data dari awal sampai akhir.
 ```
 
+---
+
 ### 🔗 **Bagian 5: Menghubungkan Percakapan AI (Modular Prompt Chaining)**
 
 #### 💡 Seperti Estafet, Tapi untuk Percakapan AI
@@ -460,6 +464,8 @@ Fokus: Bikin daftar pengeluaran yang sudah diinput
 Fokus: Test semua fitur, perbaiki bug yang ditemukan
 ```
 
+---
+
 ### 🧰 **Bagian 6: Membuat Template yang Bisa Dipakai Ulang (Reusable AI Workflows)**
 
 #### 💡 Seperti Resep Masakan, Sekali Buat Bisa Dipakai Terus
@@ -563,6 +569,8 @@ CONTOH DATA:
 Tolong buatkan halaman input pemasukan sesuai spesifikasi di atas.
 ```
 
+---
+
 ### 🤖 **Bagian 7: Teknik Lanjutan - System Prompting & MCP**
 
 #### 💡 Membuat AI Jadi "Asisten Tetap" untuk Project Anda
@@ -637,6 +645,8 @@ MCP masih teknologi baru dan agak rumit untuk pemula. Yang penting sekarang adal
 > **💡 Update Berkala:** Setiap minggu review dan update system prompt berdasarkan apa yang Anda pelajari tentang user dan project.
 
 > **💡 Test Konsistensi:** Coba tanya hal yang sama ke AI di percakapan berbeda, lihat apakah jawabannya konsisten.
+
+---
 
 ### 💬 **Bagian 8: Teknik Komunikasi yang Efektif dengan AI**
 
