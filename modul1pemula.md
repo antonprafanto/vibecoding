@@ -40,13 +40,17 @@ graph TD
     I --> J[🔍 Review dan Refine<br/>Bersama AI]
     J --> K[🚀 Produk Jadi dalam<br/>Hitungan Hari]
     
-    style A fill:#e1f5fe
-    style F fill:#c8e6c9
-    style K fill:#c8e6c9
-    style G fill:#fff3e0
-    style H fill:#fff3e0
-    style I fill:#fff3e0
-    style J fill:#fff3e0
+    style A fill:#e1f5fe,color:#000
+    style B fill:#f5f5f5,color:#000
+    style C fill:#ffebee,color:#000
+    style D fill:#ffebee,color:#000
+    style E fill:#ffebee,color:#000
+    style F fill:#c8e6c9,color:#000
+    style G fill:#fff3e0,color:#000
+    style H fill:#fff3e0,color:#000
+    style I fill:#fff3e0,color:#000
+    style J fill:#fff3e0,color:#000
+    style K fill:#c8e6c9,color:#000
 ```
 
 Diagram di atas menunjukkan perbedaan dramatis antara pendekatan tradisional dan AI-first development. Perhatikan bagaimana AI memungkinkan kita untuk melompati tahap-tahap yang memakan waktu dan langsung fokus pada problem solving.
@@ -131,10 +135,23 @@ flowchart TD
     
     E --> E1[✍️ Catat:<br/>Alasan keputusan, Kriteria sukses, Cara ukur progress]
     
-    style Start fill:#e3f2fd
-    style D2 fill:#c8e6c9
-    style D3 fill:#fff3e0
-    style E1 fill:#f3e5f5
+    style Start fill:#e3f2fd,color:#000
+    style S fill:#f5f5f5,color:#000
+    style S1 fill:#f5f5f5,color:#000
+    style S2 fill:#f0f0f0,color:#000
+    style S3 fill:#f0f0f0,color:#000
+    style S4 fill:#f0f0f0,color:#000
+    style S5 fill:#f0f0f0,color:#000
+    style P fill:#f5f5f5,color:#000
+    style P1 fill:#f0f0f0,color:#000
+    style A fill:#f5f5f5,color:#000
+    style A1 fill:#f0f0f0,color:#000
+    style D fill:#f5f5f5,color:#000
+    style D1 fill:#f5f5f5,color:#000
+    style D2 fill:#c8e6c9,color:#000
+    style D3 fill:#fff3e0,color:#000
+    style E fill:#f5f5f5,color:#000
+    style E1 fill:#f3e5f5,color:#000
 ```
 
 Framework ini membantu Anda membuat keputusan yang objektif dan terstruktur. Setiap langkah memaksa Anda untuk berpikir sistematis, bukan berdasarkan emosi atau asumsi semata.
@@ -263,11 +280,19 @@ graph TD
     F --> D1
     E -->|✅ Sudah bagus| G[🚀 Ready to Deploy!]
     
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#e8f5e8
-    style D fill:#fce4ec
-    style G fill:#c8e6c9
+    style A fill:#e3f2fd,color:#000
+    style B fill:#fff3e0,color:#000
+    style B1 fill:#f5f5f5,color:#000
+    style B2 fill:#f5f5f5,color:#000
+    style C fill:#e8f5e8,color:#000
+    style C1 fill:#f5f5f5,color:#000
+    style C2 fill:#f5f5f5,color:#000
+    style D fill:#fce4ec,color:#000
+    style D1 fill:#f5f5f5,color:#000
+    style D2 fill:#f5f5f5,color:#000
+    style E fill:#f5f5f5,color:#000
+    style F fill:#ffebee,color:#000
+    style G fill:#c8e6c9,color:#000
 ```
 
 Perhatikan bagaimana AI mengambil peran yang berbeda di setiap fase! Ini seperti memiliki tim development lengkap yang bekerja 24/7 untuk project Anda. Setiap peran memiliki expertise khusus yang saling melengkapi.
