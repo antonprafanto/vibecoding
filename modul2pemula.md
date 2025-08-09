@@ -714,6 +714,8 @@ Mari kita mulai dari nomor 1 dulu. Untuk halaman form login, kita butuh..."
 Saya: "Oke paham. Lanjut ke cara buatnya."
 ```
 
+---
+
 ### 🔨 **Hands-on Practice: Project Mini Lengkap "WarungKu" (60 menit)**
 
 #### 🎯 Project Mini: Aplikasi "WarungKu - Catatan Harian Warung"
@@ -968,6 +970,8 @@ Berikan jawaban yang realistis dan jujur.
 
 Sekarang Anda siap untuk melanjutkan ke Modul 3 di mana kita akan mulai benar-benar membuat aplikasi WarungKu menggunakan tools AI!
 
+---
+
 ## 🤔 Mengatasi Masalah Umum
 
 | ❌ Masalah yang Sering Terjadi | ✅ Cara Mengatasinya |
@@ -977,6 +981,8 @@ Sekarang Anda siap untuk melanjutkan ke Modul 3 di mana kita akan mulai benar-be
 | **AI lupa konteks percakapan sebelumnya** | Ingatkan dengan "Tadi kita sudah bahas [sebutkan topik]. Sekarang lanjut ke..." |
 | **Bingung harus mulai dari mana** | Mulai dengan pertanyaan sederhana: "Saya ingin membuat [aplikasi]. Dari mana sebaiknya saya mulai?" |
 | **Takut salah bertanya** | Ingat: tidak ada pertanyaan bodoh! AI tidak akan marah atau menghakimi. Tanya apa saja yang ingin Anda ketahui |
+
+---
 
 ## 📖 Referensi & Resources Untuk Pemula
 
@@ -996,6 +1002,8 @@ Setelah modul ini, Anda akan siap untuk:
 1. **Modul 3**: Belajar tools coding dengan AI (Cursor, Replit)
 2. **Modul 4**: Membuat aplikasi pertama Anda
 3. **Modul 5**: Mengoptimalkan dan memperbaiki aplikasi
+
+---
 
 ## 📖 Glosarium (Kamus Istilah)
 
