@@ -216,195 +216,195 @@ especially around:
 
 > **💡 Iterative Approach:** Jangan expect perfect result dari prompt pertama. Build conversation dengan AI, refine, dan improve step by step.
 
-## 🧪 Latihan Praktis Langsung
+## 🧪 Hands-on Practice
 
-### 🔨 **Proyek Mini 1: Pembuat Resep Pintar dengan AI (45 menit)**
+### 🔨 **Project Mini 1: Recipe Generator dengan AI (45 menit)**
 
-Mari langsung praktik dengan proyek sederhana tapi sangat berguna!
+Mari practice langsung dengan project sederhana tapi powerful!
 
-**Tujuan:** Membuat aplikasi yang dapat menghasilkan resep masakan berdasarkan bahan-bahan yang tersedia di rumah Anda.
+**Objective:** Buat aplikasi yang generate resep masakan berdasarkan bahan yang tersedia di rumah.
 
-**Keterampilan yang akan Anda pelajari:** Menghubungkan aplikasi dengan AI, mengelola input dari pengguna, dan dasar-dasar berkomunikasi dengan AI
+**Skills yang dipelajari:** AI API integration, input handling, dan prompt engineering basic
 
-**Alat yang dibutuhkan:**
-- Replit (gratis, langsung bisa digunakan di browser)
-- Kunci API OpenAI (gratis kredit $5 untuk pengguna baru)
+**Tools yang dibutuhkan:**
+- Replit (gratis, browser-based)
+- OpenAI API key (gratis $5 credit untuk new user)
 
-**Langkah demi langkah:**
+**Step-by-step:**
 
-**Langkah 1: Persiapan Proyek (10 menit)**
-1. Buka situs replit.com, buat akun gratis
-2. Pilih template "Python" 
-3. Ganti nama proyek menjadi "Pembuat-Resep-AI"
+**Langkah 1: Setup Project (10 menit)**
+1. Buka replit.com, buat account gratis
+2. Pilih "Python" template
+3. Rename project jadi "AI-Recipe-Generator"
 
-**Langkah 2: Perencanaan dengan AI (10 menit)**
-Buka ChatGPT atau Claude, gunakan perintah ini:
+**Langkah 2: Planning dengan AI (10 menit)**
+Buka ChatGPT atau Claude, gunakan prompt ini:
 ```
-Saya ingin membuat aplikasi pembuat resep yang:
-- Input pengguna: daftar bahan yang ada di rumah
-- Output: 3 rekomendasi resep dengan cara memasaknya
-- Teknologi: Python (aplikasi terminal sederhana dulu)
+Saya mau bikin recipe generator app yang:
+- User input: list bahan yang ada di rumah
+- Output: 3 resep recommendations dengan cara masak
+- Tech: Python (simple terminal app dulu)
 
-Tolong jelaskan struktur kode dan alur logikanya.
-```
-
-**Langkah 3: Implementasi Kode (20 menit)**
-Gunakan AI untuk menghasilkan kode, lalu salin ke Replit:
-```
-Buatkan script Python untuk pembuat resep dengan fitur:
-1. Validasi input bahan-bahan
-2. Panggilan API ke OpenAI untuk menghasilkan resep
-3. Tampilan output yang rapi
-4. Penanganan error
-
-Sertakan komentar yang jelas untuk setiap fungsi.
+Tolong breakdown struktur code dan logic flow-nya.
 ```
 
-**Langkah 4: Pengujian dan Perbaikan (5 menit)**
-Uji aplikasi dengan berbagai input, gunakan AI untuk memperbaiki bug yang muncul.
+**Langkah 3: Implementation (20 menit)**
+Gunakan AI untuk generate kode, lalu copy-paste ke Replit:
+```
+Buatkan Python script untuk recipe generator dengan features:
+1. Input validation untuk ingredients
+2. API call ke OpenAI untuk generate recipes
+3. Pretty formatting untuk output
+4. Error handling
 
-### 🎨 **Proyek Mini 2: Pembuat Website Personal dengan AI (30 menit)**
+Include comments yang jelas untuk setiap function.
+```
 
-Sekarang mari kita jelajahi AI untuk desain tampilan!
+**Langkah 4: Testing & Refinement (5 menit)**
+Test aplikasi dengan berbagai input, gunakan AI untuk fix bugs yang muncul.
 
-**Tujuan:** Membuat halaman web personal yang menarik tanpa perlu menulis kode secara manual
+### 🎨 **Project Mini 2: Personal Website Builder dengan v0 (30 menit)**
 
-**Keterampilan yang akan Anda pelajari:** Desain antarmuka dengan AI, pengembangan tanpa kode, dan pemikiran visual
+Sekarang mari kita eksplorasi AI untuk UI design!
 
-**Alat yang dibutuhkan:**
-- v0.dev (tersedia versi gratis)
+**Objective:** Buat landing page personal yang menarik tanpa coding manual
+
+**Skills yang dipelajari:** UI/UX design dengan AI, no-code development, dan visual thinking
+
+**Tools yang dibutuhkan:**
+- v0.dev (free tier tersedia)
 - Browser modern
 
-**Langkah demi langkah:**
+**Step-by-step:**
 
-**Langkah 1: Brainstorming Konten (5 menit)**
-Gunakan AI untuk perencanaan:
+**Langkah 1: Brainstorming Content (5 menit)**
+Gunakan AI untuk planning:
 ```
-Saya ingin membuat website personal untuk [profesi/minat Anda]. 
-Tolong berikan saran:
+Saya mau bikin personal website untuk [profesi/minat Anda]. 
+Tolong suggest:
 1. Struktur halaman yang menarik
-2. Bagian konten yang relevan  
-3. Skema warna yang profesional
-4. Ajakan bertindak yang efektif
+2. Content sections yang relevan  
+3. Color scheme yang profesional
+4. Call-to-action yang efektif
 ```
 
-**Langkah 2: Menghasilkan dengan v0 (15 menit)**
-1. Buka v0.dev, daftar dengan akun GitHub
-2. Gunakan perintah ini:
+**Langkah 2: Generate dengan v0 (15 menit)**
+1. Buka v0.dev, signup dengan GitHub
+2. Gunakan prompt ini:
 ```
-Buatkan halaman web personal modern untuk [profesi/minat Anda]. 
-Sertakan: bagian hero, tentang saya, keahlian/layanan, preview portofolio, formulir kontak.
-Gaya: bersih, profesional, responsif.
-Warna: [hasil saran dari AI sebelumnya]
+Create a modern personal landing page for a [your profession/interest]. 
+Include: hero section, about me, skills/services, portfolio preview, contact form.
+Style: clean, professional, responsive design.
+Colors: [hasil suggestion dari AI sebelumnya]
 ```
 
-**Langkah 3: Kustomisasi (10 menit)**
-- Edit konten sesuai dengan profil Anda
-- Coba berbagai perintah untuk mengubah gaya
-- Lihat hasilnya di tampilan mobile dan desktop
+**Langkah 3: Customization (10 menit)**
+- Edit content sesuai dengan profile Anda
+- Experiment dengan different prompts untuk styling
+- Preview di mobile dan desktop
 
-### 📊 **Proyek Mini 3: Pelacak Pengeluaran Pintar (60 menit)**
+### 📊 **Project Mini 3: Smart Expense Tracker (60 menit)**
 
-Mari buat aplikasi yang lebih kompleks dengan pengolahan data!
+Mari buat aplikasi yang lebih kompleks dengan data processing!
 
-**Tujuan:** Membuat pelacak pengeluaran yang bisa mengkategorikan otomatis dan menganalisis pola
+**Objective:** Buat tracker pengeluaran yang bisa kategorisasi otomatis dan analisis pattern
 
-**Keterampilan yang akan Anda pelajari:** Pengelolaan data, membangun logika, dan AI untuk analisis
+**Skills yang dipelajari:** Data handling, logic building, dan AI untuk analysis
 
-**Alat yang dibutuhkan:**
-- Replit atau Cursor (jika ingin mencoba)
-- ChatGPT/Claude untuk bantuan
+**Tools yang dibutuhkan:**
+- Replit atau Cursor (jika mau coba)
+- ChatGPT/Claude untuk assistance
 
-**Langkah demi langkah:**
+**Step-by-step:**
 
-**Langkah 1: Perencanaan dan Desain (15 menit)**
-Gunakan AI untuk arsitektur:
+**Langkah 1: Planning & Design (15 menit)**
+Gunakan AI untuk architecture:
 ```
-Saya ingin membuat aplikasi pelacak pengeluaran dengan fitur:
+Saya mau bikin expense tracker app dengan features:
 - Input: tanggal, jumlah, deskripsi pengeluaran
-- Kategorisasi otomatis berdasarkan deskripsi  
-- Ringkasan bulanan dan wawasan
-- Visualisasi sederhana
+- Auto-categorization berdasarkan deskripsi  
+- Monthly summary dan insights
+- Simple visualization
 
-Teknologi: Python dengan penyimpanan file (CSV)
-Tolong rancang struktur data dan alurnya.
+Tech: Python dengan file storage (CSV)
+Tolong design data structure dan flow-nya.
 ```
 
-**Langkah 2: Fungsi Inti (25 menit)**
-Hasilkan kode untuk:
-- Fungsi menambah pengeluaran
-- Logika kategorisasi menggunakan AI/kata kunci
-- Penyimpanan dan pengambilan data
-- Perhitungan dasar
+**Langkah 2: Core Functions (25 menit)**
+Generate kode untuk:
+- Add expense function
+- Categorization logic using AI/keywords
+- Data storage dan retrieval
+- Basic calculations
 
-**Langkah 3: Fitur Pintar (15 menit)**
-Tambahkan fitur bertenaga AI:
+**Langkah 3: Smart Features (15 menit)**
+Tambahkan AI-powered features:
 ```
-Buatkan fungsi yang bisa:
-1. Menganalisis pola pengeluaran dari data
-2. Menghasilkan wawasan dan rekomendasi  
-3. Memprediksi anggaran bulan depan
-4. Peringatan jika pengeluaran berlebihan di kategori tertentu
+Buatkan function yang bisa:
+1. Analisis spending pattern dari data
+2. Generate insights dan recommendations  
+3. Predict next month budget
+4. Alert jika overspending di kategori tertentu
 ```
 
-**Langkah 4: Pengujian dan Penyempurnaan (5 menit)**
-Uji dengan data palsu, perbaiki masalah dengan bantuan AI.
+**Langkah 4: Testing & Polish (5 menit)**
+Test dengan dummy data, fix issues dengan AI assistance.
 
-### 🤖 **Proyek Mini 4: Chatbot Layanan Pelanggan (45 menit)**
+### 🤖 **Project Mini 4: Chatbot Customer Service (45 menit)**
 
-Proyek terakhir untuk memahami desain percakapan AI!
+Project terakhir untuk memahami AI conversation design!
 
-**Tujuan:** Membuat chatbot sederhana untuk menjawab pertanyaan umum bisnis atau merek personal
+**Objective:** Buat chatbot sederhana untuk menjawab FAQ bisnis atau personal brand
 
-**Keterampilan yang akan Anda pelajari:** Desain percakapan, teknik komunikasi AI lanjutan, dan pemikiran pengalaman pengguna
+**Skills yang dipelajari:** Conversation design, prompt engineering advanced, dan user experience thinking
 
-**Alat yang dibutuhkan:**
+**Tools yang dibutuhkan:**
 - Replit untuk hosting
-- API OpenAI
-- HTML/CSS sederhana (akan dihasilkan AI)
+- OpenAI API
+- Simple HTML/CSS (akan di-generate AI)
 
-**Langkah demi langkah:**
+**Step-by-step:**
 
-**Langkah 1: Tentukan Kepribadian Bot (10 menit)**
+**Langkah 1: Define Bot Personality (10 menit)**
 ```
-Saya ingin membuat chatbot untuk [bisnis/merek Anda] dengan:
-- Kepribadian: [ramah/profesional/santai]
-- Tujuan utama: menjawab FAQ tentang [topik spesifik]
-- Nada: [hangat/berwibawa/membantu]
+Saya mau bikin chatbot untuk [bisnis/brand Anda] dengan:
+- Personality: [friendly/professional/casual]
+- Main purpose: menjawab FAQ tentang [topik spesifik]
+- Tone: [warm/authoritative/helpful]
 
-Tolong rancang kepribadian bot dan contoh percakapan.
+Tolong design bot personality dan sample conversations.
 ```
 
-**Langkah 2: Membangun Antarmuka Chat (20 menit)**
-Minta AI menghasilkan:
-- Antarmuka chat HTML sederhana
-- Styling CSS dasar  
-- JavaScript untuk fungsi chat
-- Koneksi ke API OpenAI
+**Langkah 2: Build Chat Interface (20 menit)**
+Minta AI generate:
+- Simple HTML chat interface
+- Basic CSS styling  
+- JavaScript untuk chat functionality
+- Connection ke OpenAI API
 
-**Langkah 3: Melatih Pengetahuan Bot (10 menit)**
-Buat basis pengetahuan dengan AI:
+**Langkah 3: Train Bot Knowledge (10 menit)**
+Create knowledge base dengan AI:
 ```
-Buatkan prompt sistem untuk chatbot yang mengetahui tentang:
+Buatkan system prompt untuk chatbot yang tahu tentang:
 - [Informasi bisnis/personal Anda]
 - FAQ umum dan jawabannya
-- Eskalasi ke manusia jika pertanyaan terlalu kompleks
+- Escalation ke human jika pertanyaan terlalu kompleks
 ```
 
-**Langkah 4: Deploy dan Uji (5 menit)**
+**Langkah 4: Deploy & Test (5 menit)**
 - Deploy ke Replit
-- Uji alur percakapan
-- Perbaiki respons berdasarkan pengujian
+- Test conversation flows
+- Refine responses berdasarkan testing
 
-### ✅ **Daftar Periksa Penyelesaian untuk Semua Proyek:**
+### ✅ **Checklist Completion untuk Semua Project:**
 
-Setelah menyelesaikan keempat proyek, pastikan Anda sudah:
-- [ ] Berhasil mengatur dan menggunakan minimal 3 alat AI berbeda
+Setelah menyelesaikan keempat project, pastikan Anda sudah:
+- [ ] Berhasil setup dan menggunakan minimal 3 tools AI berbeda
 - [ ] Memahami cara berkomunikasi efektif dengan AI untuk berbagai tujuan
-- [ ] Bisa menghasilkan, menguji, dan memperbaiki kode dengan bantuan AI
-- [ ] Membangun 4 aplikasi yang berfungsi dan bisa didemonstrasikan
-- [ ] Mengalami alur kerja lengkap dari ide sampai penerapan
-- [ ] Merasa percaya diri untuk melanjutkan ke proyek yang lebih kompleks
+- [ ] Bisa generate, test, dan debug kode dengan AI assistance
+- [ ] Membangun 4 aplikasi functional yang bisa di-demo
+- [ ] Mengalami workflow lengkap dari idea sampai deployment
+- [ ] Confident untuk lanjut ke project yang lebih kompleks
 
 ## 🤔 Troubleshooting Common Issues
 
