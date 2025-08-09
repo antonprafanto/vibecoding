@@ -24,36 +24,8 @@ Mari kita mulai dengan mengubah mindset fundamental. Selama ini, banyak orang be
 Pikirkan AI seperti asisten super pintar yang bisa berbahasa Indonesia. Alih-alih Anda harus belajar "bahasa mesin" yang rumit, sekarang Anda cukup menjelaskan keinginan Anda dalam bahasa sehari-hari, dan AI akan menerjemahkannya menjadi kode yang berfungsi. Ini seperti perbedaan antara harus belajar bahasa Jepang untuk pesan sushi, versus punya translator langsung yang memahami "saya mau sushi salmon dengan nasi extra".
 
 **Perubahan Paradigma:**
-
-```mermaid
-graph TD
-    A[💡 Ide Produk] --> B{Era Mana?}
-    
-    B -->|Dulu| C[📚 Belajar Coding<br/>Bertahun-tahun]
-    C --> D[⌨️ Menulis Kode<br/>Manual]
-    D --> E[🐛 Debug dan Fix<br/>Sendiri]
-    E --> F[🚀 Produk Jadi<br/>Setelah lama]
-    
-    B -->|Sekarang| G[🤖 Partner dengan AI]
-    G --> H[💬 Jelaskan Ide dalam<br/>Bahasa Sehari-hari]
-    H --> I[⚡ AI Generate<br/>Kode Otomatis]
-    I --> J[🔍 Review dan Refine<br/>Bersama AI]
-    J --> K[🚀 Produk Jadi dalam<br/>Hitungan Hari]
-    
-    style A fill:#e1f5fe,color:#000
-    style B fill:#f5f5f5,color:#000
-    style C fill:#ffebee,color:#000
-    style D fill:#ffebee,color:#000
-    style E fill:#ffebee,color:#000
-    style F fill:#c8e6c9,color:#000
-    style G fill:#fff3e0,color:#000
-    style H fill:#fff3e0,color:#000
-    style I fill:#fff3e0,color:#000
-    style J fill:#fff3e0,color:#000
-    style K fill:#c8e6c9,color:#000
-```
-
-Diagram di atas menunjukkan perbedaan dramatis antara pendekatan tradisional dan AI-first development. Perhatikan bagaimana AI memungkinkan kita untuk melompati tahap-tahap yang memakan waktu dan langsung fokus pada problem solving.
+- **Dulu:** Coder → Menulis kode → Membuat produk
+- **Sekarang:** Product Builder → Menjelaskan ide ke AI → AI membantu wujudkan → Produk jadi
 
 #### 🛠️ Implementasi Praktis
 
@@ -102,59 +74,6 @@ Analoginya seperti belajar masak. Ada kalanya Anda perlu eksperimen di dapur (bu
 
 **Framework SPADE untuk Solo Builder:**
 Mari gunakan framework yang sudah terbukti untuk membuat keputusan ini:
-
-```mermaid
-flowchart TD
-    Start([🤔 Harus Build atau Ship?]) --> S[📍 S - Setting<br/>Tentukan tahap project Anda]
-    
-    S --> S1{Tahap mana?}
-    S1 -->|Ide| S2[💭 Masih eksplor masalah]
-    S1 -->|Prototype| S3[🛠️ Ada gambaran, masih eksperimen]
-    S1 -->|MVP| S4[📦 Produk minimal ready]
-    S1 -->|Growth| S5[📈 Sudah validated]
-    
-    S2 --> P[👥 P - People<br/>Identifikasi stakeholder]
-    S3 --> P
-    S4 --> P
-    S5 --> P
-    
-    P --> P1[📝 List semua pihak:<br/>Target users, Mentors, Potential customers]
-    
-    P1 --> A[🔄 A - Alternatives<br/>List semua opsi]
-    
-    A --> A1[📋 Pilihan:<br/>Lanjut belajar, Ship sekarang, Pivot, Stop project]
-    
-    A1 --> D[⚖️ D - Decision<br/>Keputusan berdasarkan data]
-    
-    D --> D1{Evaluasi}
-    D1 -->|Customer feedback positif + Resource cukup + Market timing tepat| D2[🚀 SHIP!]
-    D1 -->|Feedback masih minim + Perlu validasi lebih + Teknis belum solid| D3[🔬 BUILD-TO-LEARN]
-    
-    D2 --> E[📄 E - Explanation<br/>Dokumentasi keputusan]
-    D3 --> E
-    
-    E --> E1[✍️ Catat:<br/>Alasan keputusan, Kriteria sukses, Cara ukur progress]
-    
-    style Start fill:#e3f2fd,color:#000
-    style S fill:#f5f5f5,color:#000
-    style S1 fill:#f5f5f5,color:#000
-    style S2 fill:#f0f0f0,color:#000
-    style S3 fill:#f0f0f0,color:#000
-    style S4 fill:#f0f0f0,color:#000
-    style S5 fill:#f0f0f0,color:#000
-    style P fill:#f5f5f5,color:#000
-    style P1 fill:#f0f0f0,color:#000
-    style A fill:#f5f5f5,color:#000
-    style A1 fill:#f0f0f0,color:#000
-    style D fill:#f5f5f5,color:#000
-    style D1 fill:#f5f5f5,color:#000
-    style D2 fill:#c8e6c9,color:#000
-    style D3 fill:#fff3e0,color:#000
-    style E fill:#f5f5f5,color:#000
-    style E1 fill:#f3e5f5,color:#000
-```
-
-Framework ini membantu Anda membuat keputusan yang objektif dan terstruktur. Setiap langkah memaksa Anda untuk berpikir sistematis, bukan berdasarkan emosi atau asumsi semata.
 
 #### 🛠️ Implementasi Praktis
 
@@ -258,45 +177,6 @@ Untuk development collaboration, gunakan **Cursor's Agent mode** atau **Windsurf
 
 **Skenario: Bikin fitur login untuk aplikasi Anda**
 
-```mermaid
-graph TD
-    A[🎯 Goal: Sistem Login] --> B[🧠 AI MENTOR<br/>Planning Phase]
-    
-    B --> B1[💬 Prompt: Breakdown login system<br/>untuk Next.js + TypeScript]
-    B1 --> B2[📋 AI Response:<br/>Security considerations, Recommended libraries, Step-by-step plan]
-    
-    B2 --> C[👨‍💻 AI TEAMMATE<br/>Implementation Phase]
-    
-    C --> C1[💬 Prompt: Generate login components<br/>with JWT dan Google OAuth]
-    C1 --> C2[⚡ AI generates:<br/>Login component, Auth logic, OAuth integration, Protected routes]
-    
-    C2 --> D[🔍 AI REVIEWER<br/>Review Phase]
-    
-    D --> D1[💬 Prompt: Review code untuk<br/>security vulnerabilities]
-    D1 --> D2[🛡️ AI feedback:<br/>Password hashing check, JWT handling review, Input validation tips, Security improvements]
-    
-    D2 --> E{Kode sudah aman?}
-    E -->|❌ Perlu perbaikan| F[🔧 Iterasi dengan AI<br/>untuk fix issues]
-    F --> D1
-    E -->|✅ Sudah bagus| G[🚀 Ready to Deploy!]
-    
-    style A fill:#e3f2fd,color:#000
-    style B fill:#fff3e0,color:#000
-    style B1 fill:#f5f5f5,color:#000
-    style B2 fill:#f5f5f5,color:#000
-    style C fill:#e8f5e8,color:#000
-    style C1 fill:#f5f5f5,color:#000
-    style C2 fill:#f5f5f5,color:#000
-    style D fill:#fce4ec,color:#000
-    style D1 fill:#f5f5f5,color:#000
-    style D2 fill:#f5f5f5,color:#000
-    style E fill:#f5f5f5,color:#000
-    style F fill:#ffebee,color:#000
-    style G fill:#c8e6c9,color:#000
-```
-
-Perhatikan bagaimana AI mengambil peran yang berbeda di setiap fase! Ini seperti memiliki tim development lengkap yang bekerja 24/7 untuk project Anda. Setiap peran memiliki expertise khusus yang saling melengkapi.
-
 **Step 1: Planning dengan AI Mentor**
 ```
 Saya mau bikin sistem login untuk aplikasi web saya. 
@@ -338,35 +218,6 @@ especially around:
 
 ## 🧪 Hands-on Practice
 
-Bagian ini adalah jantung pembelajaran Anda! Kami telah merancang 4 project mini yang saling melengkapi untuk membangun skill secara bertahap. Setiap project mengajarkan aspek berbeda dari AI-first development.
-
-```mermaid
-graph LR
-    A[🍳 Project 1<br/>Recipe Generator<br/>AI Integration Basics] --> B[🎨 Project 2<br/>Personal Website<br/>UI Design with AI]
-    
-    B --> C[📊 Project 3<br/>Expense Tracker<br/>Data dan Logic]
-    
-    C --> D[🤖 Project 4<br/>Chatbot Service<br/>Advanced AI]
-    
-    E[📚 Skill Development] 
-    E -.-> E1[Prompt Engineering]
-    E -.-> E2[Problem Solving]  
-    E -.-> E3[AI Collaboration]
-    E -.-> E4[Product Thinking]
-    
-    A -.-> E1
-    B -.-> E2
-    C -.-> E3
-    D -.-> E4
-    
-    style A fill:#fff3e0
-    style B fill:#e8f5e8
-    style C fill:#e3f2fd
-    style D fill:#fce4ec
-```
-
-Setiap project dirancang untuk memberikan pengalaman yang berbeda, namun saling terkait. Pada akhir pembelajaran, Anda akan memiliki portfolio mini yang menunjukkan kemampuan AI-first development dari berbagai angle.
-
 ### 🔨 **Project Mini 1: Recipe Generator dengan AI (45 menit)**
 
 Mari practice langsung dengan project sederhana tapi powerful!
@@ -374,34 +225,6 @@ Mari practice langsung dengan project sederhana tapi powerful!
 **Objective:** Buat aplikasi yang generate resep masakan berdasarkan bahan yang tersedia di rumah.
 
 **Skills yang dipelajari:** AI API integration, input handling, dan prompt engineering basic
-
-```mermaid
-flowchart TD
-    Start([🎯 Mulai Project]) --> Setup[⚙️ Setup Environment<br/>Replit + API Key]
-    
-    Setup --> Plan[🧠 Planning dengan AI<br/>Breakdown struktur app]
-    
-    Plan --> Plan1[💬 Prompt AI untuk:<br/>App architecture, Code structure, Logic flow]
-    
-    Plan1 --> Code[👨‍💻 Implementation<br/>Generate code dengan AI]
-    
-    Code --> Code1[⚡ AI generates:<br/>Input validation, API integration, Output formatting, Error handling]
-    
-    Code1 --> Test[🧪 Testing dan Debug]
-    
-    Test --> Test1{Aplikasi jalan?}
-    Test1 -->|❌ Ada error| Debug[🔧 Debug dengan AI<br/>Copy-paste error message]
-    Debug --> Test
-    Test1 -->|✅ Works!| Success[🎉 Project Complete!<br/>Anda bisa demo ke teman]
-    
-    Success --> Reflect[🤔 Reflection:<br/>Apa yang dipelajari?]
-    
-    style Start fill:#e3f2fd
-    style Plan1 fill:#fff3e0
-    style Code1 fill:#e8f5e8
-    style Success fill:#c8e6c9
-    style Debug fill:#ffebee
-```
 
 **Tools yang dibutuhkan:**
 - Replit (gratis, browser-based)
@@ -582,47 +405,6 @@ Setelah menyelesaikan keempat project, pastikan Anda sudah:
 - [ ] Membangun 4 aplikasi functional yang bisa di-demo
 - [ ] Mengalami workflow lengkap dari idea sampai deployment
 - [ ] Confident untuk lanjut ke project yang lebih kompleks
-
-### 📈 **Progression Learning Map**
-
-Diagram berikut menunjukkan bagaimana skill Anda berkembang melalui setiap project:
-
-```mermaid
-graph TD
-    subgraph Level1 ["🌱 Level 1: AI Basics"]
-        P1[🍳 Recipe Generator]
-        P1 --> S1[✨ Skills Unlocked:<br/>Basic prompt engineering, API integration, Input/output handling]
-    end
-    
-    subgraph Level2 ["🌿 Level 2: Design Thinking"]
-        P2[🎨 Personal Website]
-        P2 --> S2[✨ Skills Unlocked:<br/>Visual design with AI, No-code development, User experience thinking]
-    end
-    
-    subgraph Level3 ["🌳 Level 3: Data Intelligence"]
-        P3[📊 Expense Tracker]
-        P3 --> S3[✨ Skills Unlocked:<br/>Data processing, Logic building, AI for analysis dan insights]
-    end
-    
-    subgraph Level4 ["🚀 Level 4: AI Mastery"]
-        P4[🤖 Chatbot Service]
-        P4 --> S4[✨ Skills Unlocked:<br/>Advanced prompt engineering, Conversation design, System integration]
-    end
-    
-    Level1 --> Level2
-    Level2 --> Level3  
-    Level3 --> Level4
-    
-    Level4 --> Graduate[🎓 Ready for Module 2!<br/>Advanced AI Collaboration]
-    
-    style Level1 fill:#fff3e0
-    style Level2 fill:#e8f5e8
-    style Level3 fill:#e3f2fd
-    style Level4 fill:#fce4ec
-    style Graduate fill:#c8e6c9
-```
-
-Setiap level membangun fondasi untuk level berikutnya. Pada akhir Module 1, Anda tidak hanya memiliki 4 aplikasi yang berfungsi, tetapi juga pemahaman mendalam tentang berbagai cara AI dapat menjadi partner development Anda. Skill ini akan menjadi dasar yang kuat untuk pembelajaran advanced di Module 2 dan seterusnya.
 
 ## 🤔 Troubleshooting Common Issues
 
