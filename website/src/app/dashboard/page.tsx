@@ -64,6 +64,9 @@ export default function Dashboard() {
             </Link>
             
             <nav className="flex items-center space-x-6">
+              <Link href="/search" className="text-gray-600 hover:text-green-600 transition-colors">
+                🔍 Cari
+              </Link>
               <Link href="/resources" className="text-gray-600 hover:text-green-600 transition-colors">
                 Resources
               </Link>
@@ -184,6 +187,15 @@ export default function Dashboard() {
         <div className="mt-12 bg-white rounded-xl shadow-lg p-6">
           <h2 className="text-xl font-semibold text-gray-900 mb-6">Aksi Cepat</h2>
           <div className="grid md:grid-cols-3 gap-4">
+            <Link 
+              href="/search"
+              className="p-4 border border-gray-200 rounded-lg hover:border-green-600 hover:shadow-md transition-all group"
+            >
+              <div className="text-2xl mb-2">🔍</div>
+              <h3 className="font-semibold text-gray-900 group-hover:text-green-600">Cari Materi</h3>
+              <p className="text-sm text-gray-600">Search konten pembelajaran</p>
+            </Link>
+            
             <Link 
               href="/resources"
               className="p-4 border border-gray-200 rounded-lg hover:border-green-600 hover:shadow-md transition-all group"
