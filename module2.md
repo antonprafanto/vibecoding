@@ -1,723 +1,1021 @@
 # 🚀 Module 2: Prompting & AI Collaboration - VibeCoding Bootcamp
 
 ## 📋 Ringkasan Modul
-Setelah setup foundation di Module 1, sekarang waktunya menguasai **seni berkomunikasi dengan AI** untuk development! Module ini akan mengajari kamu cara "ngobrol" dengan AI secara profesional untuk bikin aplikasi web dan SaaS. Kamu akan belajar menulis Product Requirements Document (PRD) dengan AI, teknik prompt engineering yang powerful, dan cara bikin workflow AI yang bisa dipakai berulang-ulang.
+Setelah setup foundation di Module 1, sekarang waktunya belajar **"ngobrol" dengan AI untuk bikin aplikasi**! Module ini dirancang khusus untuk awam total yang belum pernah berkomunikasi dengan AI untuk development. Kita akan mulai dari conversation basic, lalu step-by-step naik ke level yang lebih advanced. Di akhir module, kamu akan bisa berkomunikasi dengan AI seperti seorang developer profesional!
 
 ## 🎯 Learning Objectives
-- [ ] **Menulis PRD (Product Requirements Document)** yang jelas dengan bantuan AI
-- [ ] **Menguasai prompt engineering fundamentals** untuk coding tasks
-- [ ] **Membuat structured prompts** untuk UI design, API development, dan system architecture  
-- [ ] **Membangun modular prompt chains** yang reusable untuk berbagai project
-- [ ] **Menggunakan system prompting** dan Model Context Protocol (MCP) untuk workflow yang konsisten
-- [ ] **Berkomunikasi efektif** dengan AI untuk development mulai dari ide sampai deployment
+- [ ] **Berkomunikasi basic** dengan AI untuk solving coding problems
+- [ ] **Menulis PRD sederhana** dengan bantuan AI untuk project planning
+- [ ] **Memecah fitur besar** jadi tasks kecil yang bisa dikerjakan
+- [ ] **Menggunakan AI untuk UI dan API design** dengan prompt yang tepat
+- [ ] **Membuat workflow AI** yang bisa dipakai berulang-ulang
+- [ ] **Build complete web app** dengan AI collaboration dari awal sampai selesai
 
 ---
 
 ## 📚 Materi Pembelajaran
 
-### 🔥 **Bagian 1: Product Requirements Document (PRD) dengan AI**
+### 🌟 **Bagian 1: First Conversation - Ngobrol Pertama dengan AI (Start Here!)**
 
-#### 💡 Konsep Dasar: Mengapa PRD Penting di Era AI?
+#### 💡 Konsep Dasar: AI = Partner Coding yang Sabar
 
-**Tradisional PRD vs AI-First PRD:**
+**Mindset Shift untuk Awam:**
 ```
-❌ PRD Lama: Dokumen panjang yang nggak dibaca developer
-✅ AI-First PRD: Conversation starter untuk collaborative building
+❌ "AI itu scary dan complicated"
+✅ "AI itu seperti senior developer yang mau ngajarin dengan sabar"
 
-❌ Detail sampai pixel: "Button harus 32px dengan border-radius 8px"  
-✅ Intent-focused: "User perlu cara mudah untuk konfirmasi action penting"
+❌ "Harus pake bahasa teknis yang rumit"  
+✅ "Explain aja seperti ngomong ke teman, AI akan understand"
 
-❌ Technical jargon: "Implement REST API with JWT authentication"
-✅ User-centric: "User bisa login sekali dan tetap login sampai logout manual"
+❌ "Takut salah bertanya"
+✅ "AI nggak akan judge, malah senang bantu explain ulang"
 ```
 
-**🎯 Filosofi AI-First PRD:**
-> "PRD bukan blueprint yang kaku - tapi conversation starter yang evolving bersama AI!"
+#### 🛠️ Your First AI Conversation (Step-by-Step)
 
-#### 🛠️ Template PRD Siap Pakai untuk Pemula
+**🎯 Goal:** Bikin confidence dengan AI, prove bahwa ini nggak scary!
+
+**Step 1: Buka AI Assistant (2 menit)**
+1. Buka [ChatGPT](https://chat.openai.com) atau [Claude](https://claude.ai)
+2. Nggak perlu registrasi dulu, just try free version
+3. Lihat empty chat box - ini tempat kamu "ngobrol"
+
+**Step 2: Say Hello (1 menit)**
+```
+Halo! Saya benar-benar awam di dunia coding. Bisa bantu saya belajar step by step?
+```
+✅ **Expected Response:** AI akan respond ramah dan siap membantu
+
+**Step 3: Ask Something Simple (2 menit)**
+```
+Saya sering denger istilah "website" dan "web app". Apa bedanya sih? Jelasin pakai bahasa yang gampang dipahami ya.
+```
+✅ **Expected Response:** Penjelasan sederhana dengan analogi yang mudah dimengerti
+
+**🎉 Congratulations!** Kamu baru saja berhasil ngobrol dengan AI untuk hal teknis pertama kali!
+
+#### 📝 Template "Ngobrol Awam" dengan AI
+
+**Formula Simple untuk Awam:**
+```
+"Saya awam banget di [topik]. Bisa explain [pertanyaan] dengan bahasa yang simple?"
+```
+
+**Contoh-contoh Real:**
+```
+❓ "Saya awam banget di coding. Bisa explain apa itu HTML dengan bahasa yang simple?"
+
+❓ "Saya nggak ngerti programming. Bisa jelasin apa itu database seperti jelasin ke anak kecil?"
+
+❓ "Saya baru kenal coding. Gimana sih cara kerja website? Pakai analogi yang gampang dong."
+```
+
+#### ⚡ Pro Tips: Conversation yang Effective
+
+> **💡 Tips #1:** Selalu bilang skill level kamu ("saya awam", "saya pemula") di awal conversation
+
+> **💡 Tips #2:** Minta explanation dengan analogi: "jelasin seperti analogi restoran" atau "seperti jelasin ke anak kecil"
+
+> **💡 Tips #3:** Jangan malu tanya "apa maksudnya?" kalau ada yang belum clear
+
+---
+
+### 🎨 **Bagian 2: AI Sebagai Coding Teacher - Belajar Sambil Bikin**
+
+#### 💡 Konsep: Learn by Building, Not by Reading
+
+**Traditional Learning vs AI-Assisted Learning:**
+```
+❌ Traditional: Baca teori → hafal syntax → bingung apply
+✅ AI-Assisted: "Mau bikin X" → AI guide step by step → langsung jadi
+
+❌ "Belajar JavaScript dulu 3 bulan baru bikin project"
+✅ "Mau bikin button yang bisa diklik, AI ajarin sambil bikin"
+```
+
+#### 🛠️ Template "Belajar Sambil Bikin"
+
+**Formula Magic untuk Awam:**
+```
+"Saya mau bikin [something simple] tapi nggak tau caranya. Bisa ajarin step by step sambil jelasin setiap langkahnya?"
+```
+
+**🔥 Prompt Template #1: Belajar HTML Dasar**
+```
+Saya awam total dan mau belajar bikin website. 
+
+Mau bikin halaman web simple yang isinya:
+- Judul besar "Selamat Datang"
+- Paragraf pendek tentang diri saya
+- Tombol yang bilang "Klik Saya"
+
+Bisa ajarin step by step? Jelasin juga kenapa pakai code tertentu. Saya mau ngerti, bukan cuma copy paste.
+```
+
+**🔥 Prompt Template #2: Bikin Interactive Button**
+```
+Saya udah punya HTML basic. Sekarang mau bikin button yang kalau diklik, ada sesuatu yang terjadi (misalnya text berubah atau muncul pesan).
+
+Requirements saya:
+- Pakai bahasa yang gampang dipahami  
+- Jelasin setiap baris code artinya apa
+- Kasih tau cara testnya di browser
+- Kalau bisa, kasih 2-3 variasi yang berbeda
+
+Ajarin dengan sabar ya, saya masih belajar banget.
+```
+
+**🔥 Prompt Template #3: Bikin Form Sederhana**
+```
+Saya mau bikin form yang bisa terima input dari user (nama dan email), terus kalau user submit, muncul pesan "Terima kasih, [nama]!"
+
+Tolong guide:
+1. Gimana bikin form yang proper
+2. Gimana "catch" data yang user input  
+3. Gimana tampilin response ke user
+4. Jelasin logic di balik setiap step
+
+Target: Saya ngerti prosesnya, bukan cuma dapet working code.
+```
+
+#### 📚 Progressive Learning Path untuk Awam
+
+**Week 1: HTML Basics (Buat confidence)**
+- Static webpage dengan text dan images
+- Learn by building personal intro page
+- Focus: Structure dan semantic elements
+
+**Week 2: CSS Basics (Bikin cantik)**  
+- Style the page yang udah dibuat
+- Learn colors, fonts, spacing
+- Focus: Visual design principles
+
+**Week 3: JavaScript Basics (Bikin interactive)**
+- Add simple interactivity
+- Button clicks, form submissions
+- Focus: User interaction concepts
+
+**Week 4: Put It Together (Mini project)**
+- Simple but complete web application
+- Combine semua yang udah dipelajari
+- Focus: End-to-end development flow
+
+#### ⚡ Pro Tips: Learning dengan AI
+
+> **💡 Tips #4:** Selalu minta AI explain "WHY" bukan cuma "HOW" - "Kenapa pakai div instead of span?"
+
+> **💡 Tips #5:** Build in public - share progress, ask for feedback, celebrate small wins
+
+> **💡 Tips #6:** One concept at a time - jangan rushing, master satu konsep sebelum lanjut
+
+---
+
+### 📋 **Bagian 3: PRD (Product Requirements Document) dengan AI**
+
+#### 💡 Konsep: Planning Sebelum Coding
+
+**Mengapa PRD Penting untuk Awam:**
+```
+❌ Tanpa PRD: "Mau bikin website" → stuck di tengah jalan, nggak tau mau bikin apa
+✅ Dengan PRD: Clear roadmap dari ide sampai jadi aplikasi yang berguna
+```
+
+**PRD untuk Awam vs Developer:**
+```
+❌ Developer PRD: Technical jargon, database schema, API specifications  
+✅ Awam PRD: User problems, simple solutions, clear success metrics
+```
+
+#### 🛠️ Simple PRD Template untuk Awam
 
 ```markdown
-# 📱 [Nama Aplikasi] - AI-First PRD
+# 📱 [Nama Aplikasi Saya] - Planning Document
 
-## 🎯 Problem Statement
-**Siapa yang mengalami masalah:** [Target user specific]
-**Masalah apa:** [Pain point yang jelas dan measurable]  
-**Kenapa masalah ini penting:** [Impact kalau nggak diselesaikan]
-**Contoh konkret:** [Real scenario yang relatable]
+## 🤔 Masalah yang Mau Diselesaikan
+**Siapa yang punya masalah:** [Target user yang spesifik]
+**Masalah apa:** [Pain point yang jelas dan relatable]
+**Contoh situasi:** [Real scenario yang sering terjadi]
 
-## 💡 Solution Overview  
-**Core solution:** [1 kalimat yang explain value prop]
-**Key features (max 3):** [Feature utama yang solve problem]
-**Success metrics:** [Gimana kita tau berhasil]
+## 💡 Solusi Sederhana  
+**Ide utama:** [1 kalimat yang explain solution]
+**Fitur utama (maksimal 3):** 
+1. [Fitur yang solve masalah #1]
+2. [Fitur yang solve masalah #2]  
+3. [Fitur yang solve masalah #3]
 
-## 👤 User Journey
-**Happy path:** [Step by step ideal user experience]
-**Edge cases:** [What if scenarios yang penting]
+## 👤 Gimana User Bakal Pakai
+1. User buka aplikasi → lihat apa
+2. User mau [do something] → klik/input apa
+3. Aplikasi response gimana
+4. User satisfied dengan hasil
 
-## 🔧 Technical Considerations
-**Platform:** [Web/Mobile/Desktop]
-**Core tech requirements:** [Database, auth, APIs, dll]
-**Performance expectations:** [Load time, user capacity]
-**Security needs:** [Data protection, privacy]
+## ✅ Sukses Kalau...
+[3 hal yang bisa diukur dalam 1-2 minggu]
 
-## 🚫 Out of Scope (V1)
-[Hal yang nggak dikerjain di versi pertama]
-
-## 📊 Success Criteria
-[Metrics yang bisa diukur dalam 30 hari]
+## 🚫 Yang NGGAK Dikerjain Dulu
+[Fitur yang keren tapi nggak essential untuk v1]
 ```
 
-#### 💻 Prompt AI untuk Generate PRD
+#### 💻 AI Prompts untuk Bikin PRD
 
-**🔥 Prompt #1: PRD Generator untuk Pemula**
+**🔥 Prompt Template #4: PRD Generator**
 ```
-Saya seorang pemula yang mau bikin aplikasi [describe your idea]. Saya nggak punya pengalaman teknis tapi punya ide yang solve real problem.
+Saya punya ide aplikasi tapi masih bingung gimana organize idenya. Bantu saya bikin planning document yang jelas.
 
-Tolong buatkan PRD (Product Requirements Document) yang:
-1. User-friendly dan mudah dipahami pemula
-2. Fokus pada masalah user, bukan teknis
-3. Realistic untuk dikerjakan solo developer dalam 2-4 minggu
-4. Include user journey yang detail
-5. Specific enough untuk mulai development tapi flexible untuk iterate
+**Ide saya:**
+[Ceritakan ide kamu dalam 2-3 kalimat natural]
 
-Format pakai template yang mudah diikuti. Anggap saya akan pakai PRD ini untuk ngobrol dengan AI coding assistant.
+**Context:**
+- Saya awam di development, baru belajar coding
+- Mau bikin something simple yang bisa selesai dalam 2-4 minggu
+- Target users: [siapa yang bakal pakai aplikasi ini]
+- Problem yang mau diselesaikan: [masalah real yang kamu atau orang lain sering alami]
 
-Idea saya: [jelaskan ide kamu dalam 2-3 kalimat]
-Target user: [siapa yang akan pakai]
-Main problem: [masalah apa yang mau diselesaikan]
+Tolong buatkan planning document yang:
+1. Easy to understand untuk pemula
+2. Fokus pada user experience, bukan teknis
+3. Realistic scope untuk solo beginner
+4. Step-by-step yang actionable
+
+Format pakai template yang simple dan organized.
 ```
 
-**🔥 Prompt #2: PRD Validator & Improver**
+**🔥 Prompt Template #5: PRD Validator**
 ```
-Saya sudah punya draft PRD untuk aplikasi saya. Tolong review dan improve dengan mindset:
+Saya udah punya draft planning untuk aplikasi saya. Tolong review dan kasih feedback honest.
 
-1. Apakah masalah yang mau diselesaikan benar-benar ada dan urgent?
-2. Apakah solution yang diusulkan realistic untuk pemula?
+**Planning saya:**
+[Paste PRD draft yang udah kamu buat]
+
+**Review criteria:**
+1. Apakah ide ini solve real problem yang penting?
+2. Apakah scope realistic untuk pemula yang baru belajar coding?
 3. Apakah user journey masuk akal dan simple?
-4. Apa yang kurang jelas atau bisa bikin confused saat development?
-5. Suggest improvement yang specific dan actionable
+4. Apa yang missing atau kurang jelas?
+5. Suggestions untuk improve planning ini
 
-PRD saya:
-[paste PRD draft kamu di sini]
-
-Berikan feedback dalam format: What's good, What needs improvement, Specific suggestions.
+Kasih feedback yang constructive dan supportive. Inget saya masih awam, jadi pakai bahasa yang encouraging.
 ```
 
-#### ⚡ Pro Tips: PRD yang AI-Friendly
+#### ⚡ Pro Tips: PRD yang Realistic
 
-> **💡 Tips #1:** Pakai "User Story Format" - "As a [user type], I want [goal] so that [benefit]"
+> **💡 Tips #7:** Start dengan problem yang kamu personally alami - easier to understand user needs
 
-> **💡 Tips #2:** Include "AI Context" - jelaskan ke AI apa role kamu (beginner/expert) dan goal project (learning/business)
+> **💡 Tips #8:** Keep scope VERY small untuk project pertama - better 1 feature yang perfect than 5 features yang half-done
 
-> **💡 Tips #3:** Bikin PRD "Living Document" - update based on AI suggestions dan user feedback
+> **💡 Tips #9:** Write untuk "future you" - 2 minggu dari sekarang ketika udah lupa kenapa bikin fitur ini
 
 ---
 
-### 🎯 **Bagian 2: Prompt Engineering Fundamentals untuk Coding**
+### 🧩 **Bagian 4: Memecah Fitur Besar Jadi Tasks Kecil**
 
-#### 💡 Konsep Dasar: Dari Conversation ke Code
+#### 💡 Konsep: Elephant Eating Strategy
 
-**Mindset Shift yang Penting:**
+**Problem Awam dengan Big Features:**
 ```
-❌ "AI, bikin website untuk toko online"
-✅ "AI, bantu saya bikin landing page untuk toko kaos custom dengan fitur showcase produk, form order sederhana, dan WhatsApp integration"
-
-❌ "Fix this bug"  
-✅ "Saya punya error [paste error message]. Ini terjadi saat [explain context]. Code saya: [paste relevant code]. Tolong explain kenapa error ini terjadi dan berikan solution step-by-step"
+❌ "Mau bikin e-commerce website" → overwhelmed, nggak tau mulai dari mana
+✅ "Mau bikin halaman yang bisa tampilin 1 produk dengan harga" → doable!
 ```
 
-#### 🛠️ Framework CLEAR untuk Prompt Engineering
+**Analogi Sederhana:**
+> Bikin aplikasi seperti makan gajah - nggak mungkin sekali lahap, tapi kalau dipotong kecil-kecil, bisa habis juga!
 
-**C - Context (Kasih tau situasinya)**
-- Skill level kamu (beginner/intermediate/advanced)
-- Tech stack yang dipakai
-- Apa yang mau dicapai
-- Constraint atau limitation
+#### 🛠️ Simple Framework: KECIL Method
 
-**L - Logic (Jelaskan alur berpikirnya)**  
-- Step-by-step approach yang kamu mau
-- Priority atau urutan pengerjaan
-- Decision criteria
-
-**E - Examples (Berikan contoh konkret)**
-- Input/output yang diharapkan
-- Similar case yang pernah berhasil
-- Reference atau inspiration
-
-**A - Action (Specific task yang diminta)**
-- Verb yang clear (analyze, create, refactor, debug)
-- Deliverable yang specific
-- Format output yang diinginkan
-
-**R - Review (Minta validasi dan feedback)**
-- Ask AI to explain the approach
-- Request pros/cons of solution
-- Get alternative suggestions
-
-#### 💻 5 Template Prompt Siap Pakai untuk Development
-
-**🔥 Prompt #3: Feature Development**
+**K - Konkret (Specific dan measurable)**
 ```
-**Context:** Saya pemula yang sedang bikin [type of app]. Tech stack: [your stack]. Skill level: basic [language].
-
-**Logic:** Saya mau implement fitur [feature name] dengan approach:
-1. Understand requirements
-2. Design simple solution  
-3. Code step by step
-4. Test and iterate
-
-**Examples:** Fitur ini seperti [reference/inspiration]. User flow: [describe user journey].
-
-**Action:** 
-1. Break down fitur ini jadi subtasks yang small dan manageable
-2. Prioritize subtasks dari most important ke least
-3. Untuk subtask #1, buatkan code dengan banyak comments
-4. Explain setiap part dan kenapa dibutuhkan
-
-**Review:** Setelah kasih solution, tolong explain:
-- Apakah approach ini optimal untuk pemula?
-- Potential issues yang mungkin muncul
-- Next steps untuk testing dan improvement
-
-Fitur yang mau diimplement: [describe your feature]
+❌ "Improve user experience"  
+✅ "Bikin form yang bisa submit dan kasih feedback ke user"
 ```
 
-**🔥 Prompt #4: Code Review & Debugging**
+**E - Estimatable (Bisa ditaksir waktu pengerjaan)**
 ```
-**Context:** Saya [skill level] developer yang stuck dengan code. Expected behavior: [what should happen]. Actual behavior: [what actually happens].
-
-**Logic:** Help saya debug dengan approach:
-1. Identify root cause
-2. Explain why it happens  
-3. Provide step-by-step fix
-4. Prevent similar issues
-
-**Examples:** 
-Error message: [paste exact error]
-Relevant code: [paste code block]
-What I tried: [previous attempts]
-
-**Action:**
-1. Analyze error message dan explain dalam bahasa sederhana
-2. Point out specific line/section yang bermasalah
-3. Provide corrected code dengan highlight changes
-4. Explain reasoning behind each change
-
-**Review:** 
-- Apakah ada cara yang lebih elegant?
-- Best practices untuk avoid similar bugs
-- Testing strategy untuk verify fix
+❌ "Integrate with payment system" (bisa 1 hari bisa 1 bulan)
+✅ "Bikin button yang redirect ke WhatsApp untuk payment" (2-3 jam)
 ```
 
-**🔥 Prompt #5: Architecture & Planning**
+**C - Completable (Bisa diselesaikan dalam 1-2 hari max)**
 ```
-**Context:** Saya mau bikin [app description] sebagai [solo developer/team project]. Target: [timeline] dengan budget [range].
-
-**Logic:** Need help dengan:
-1. Choose appropriate tech stack
-2. Plan development phases
-3. Identify potential challenges
-4. Create realistic timeline
-
-**Examples:** 
-Similar apps: [reference apps]
-Must-have features: [list]
-Nice-to-have features: [list]
-Technical constraints: [any limitations]
-
-**Action:**
-1. Recommend tech stack dengan reasoning (considering my skill level)
-2. Break project into weekly milestones
-3. Identify dependencies dan potential blockers
-4. Suggest MVP scope yang realistic
-
-**Review:**
-- Risk assessment dan mitigation strategies
-- Alternative approaches dengan pros/cons
-- Learning resources untuk skills yang dibutuhkan
+❌ "User authentication system"
+✅ "Simple login form dengan validation"
 ```
 
-#### ⚡ Pro Tips: Effective Prompt Engineering
+**I - Independent (Bisa dikerjakan sendiri tanpa tunggu yang lain)**
+```
+❌ "Display user data" (butuh login system dulu)
+✅ "Design layout untuk user profile page" (bisa dikerjakan kapan aja)
+```
 
-> **💡 Tips #4:** "Rubber Duck" with AI - explain your problem step by step seperti ngomong ke bebek
+**L - Learnable (Ada resources untuk belajar kalau stuck)**
+```
+❌ "Custom encryption algorithm"  
+✅ "Simple form validation dengan JavaScript"
+```
 
-> **💡 Tips #5:** Use "Progressive Disclosure" - start general, gradually add specifics based on AI response
+#### 💻 AI Prompts untuk Task Breakdown
 
-> **💡 Tips #6:** Always ask "Why" - minta AI explain reasoning di balik every suggestion
+**🔥 Prompt Template #6: Feature Breakdown**
+```
+Saya punya fitur yang kayaknya besar dan kompleks. Help me break down jadi tasks kecil yang manageable.
+
+**Fitur yang mau diimplement:**
+[Describe fitur yang mau kamu bikin]
+
+**Context saya:**
+- Skill level: Awam yang baru belajar coding
+- Available time: [berapa jam per hari bisa coding]
+- Timeline target: [kapan mau selesai]
+- Current knowledge: [apa yang udah kamu bisa]
+
+**Request:**
+1. Break down fitur ini jadi tasks yang small dan specific
+2. Arrange tasks dari yang paling basic sampai advanced
+3. Estimate berapa lama setiap task (realistic untuk pemula)  
+4. Identify mana yang harus dikerjain dulu (dependencies)
+5. Suggest mana yang bisa diskip untuk MVP version
+
+**Output format:** Checklist yang actionable dengan prioritas yang jelas.
+```
+
+**🔥 Prompt Template #7: Daily Task Planner**
+```
+Based on feature breakdown yang tadi, help me plan daily tasks untuk minggu ini.
+
+**Feature breakdown:**
+[Paste hasil breakdown dari prompt sebelumnya]
+
+**My availability:**
+- Hari kerja: [berapa jam bisa coding]
+- Weekend: [berapa jam available]  
+- Skill level: [current abilities]
+- Learning speed: [slow/medium/fast learner]
+
+**Planning request:**
+1. Assign tasks ke specific days dengan realistic time estimate
+2. Include learning time untuk concepts yang belum familiar
+3. Add buffer time untuk debugging dan problem solving
+4. Suggest backup tasks kalau stuck di main task
+5. Set daily success criteria yang achievable
+
+**Goal:** Weekly plan yang challenging tapi nggak overwhelming.
+```
+
+#### 📊 Example: Task Breakdown untuk "Todo App"
+
+**❌ Big Scary Feature:**
+"Bikin todo application yang full-featured"
+
+**✅ KECIL Tasks:**
+1. **Day 1 (3 jam):** HTML structure - form input + list container
+2. **Day 2 (2 jam):** Add task functionality - JavaScript untuk add items ke list  
+3. **Day 3 (2 jam):** Delete task - button dan function untuk remove items
+4. **Day 4 (3 jam):** Mark complete - checkbox dan styling untuk completed tasks
+5. **Day 5 (2 jam):** Basic styling - make it look decent dengan CSS
+6. **Day 6 (1 jam):** Testing - try semua features, fix bugs
+7. **Day 7 (1 jam):** Polish - small improvements, add nice touches
+
+**Total:** 14 jam spread over 1 week = realistic untuk pemula
+
+#### ⚡ Pro Tips: Task Management untuk Awam
+
+> **💡 Tips #10:** "One Day Rule" - Setiap task harus bisa selesai dalam 1 hari. Kalau lebih, pecah lagi.
+
+> **💡 Tips #11:** Always include "buffer time" - multiply estimate dengan 1.5x untuk account learning curve
+
+> **💡 Tips #12:** Celebrate small wins - check off completed tasks, screenshot progress, share dengan teman
 
 ---
 
-### 🌐 **Bagian 3: Structured Prompts untuk UI, API, dan System Flow**
+### 🎯 **Bagian 5: Structured Prompts untuk UI dan System Design**
 
-#### 💡 Konsep Dasar: Component-Based Prompting
+#### 💡 Konsep: From Idea ke Concrete Design
 
-**Think in Components, Not Pages:**
+**Awam Problem dengan Design:**
 ```
-❌ "Bikin halaman login yang keren"
-✅ "Bikin login component dengan email/password input, remember me checkbox, forgot password link, dan error handling untuk invalid credentials"
-
-❌ "Buatkan API untuk user management"  
-✅ "Design RESTful API endpoints untuk user registration, authentication, profile update, dengan proper HTTP status codes dan error responses"
+❌ "Mau bikin app yang user-friendly" → vague, AI bingung gimana help
+✅ "Mau bikin login page dengan email/password, error handling, dan mobile-friendly" → specific, actionable
 ```
 
-#### 🛠️ Template untuk UI Development
+#### 🛠️ Template untuk UI Design
 
-**🎨 UI Component Prompt Structure:**
+**🎨 UI Component Request Template:**
 ```
-**Component:** [Component name dan purpose]
-**Context:** [Where it's used dan interaction dengan other components]  
-**Requirements:**
-- Visual: [Layout, styling, responsive behavior]
-- Functional: [User interactions, state management]
-- Data: [What data it needs dan dari mana]
-- Validation: [Input validation dan error handling]
+**Component:** [Nama component dan fungsinya]
+**Purpose:** [Kenapa component ini dibutuhkan]
+**User interaction:** [Apa yang user bisa lakukan]
 
-**User Experience:**
-- Happy path: [Normal user flow]
-- Edge cases: [Error states, loading states]
-- Accessibility: [Screen reader, keyboard navigation]
+**Visual requirements:**
+- Layout: [Describe gimana keliatan layout]
+- Style: [Simple/modern/colorful/professional]  
+- Mobile: [Gimana behavior di mobile]
 
-**Technical Specs:**
-- Framework: [React/Vue/Vanilla JS]
-- Styling: [CSS/Tailwind/styled-components]
-- State: [Local state/global state/props]
+**Functional requirements:**
+- Input: [Data apa yang user kasih]
+- Output: [Response apa yang user terima]
+- Validation: [Rules untuk input yang valid]
 
-**Output Format:** [Code + explanation + usage example]
+**Context:** [Dimana component ini dipakai dalam app]
 ```
 
-**🔥 Prompt #6: UI Component Generator**
+**🔥 Prompt Template #8: UI Component Designer**
 ```
-Saya butuh component [component name] untuk aplikasi [app context].
+Saya butuh design untuk [nama component] di aplikasi saya.
 
-**Component:** [describe component]
-**Context:** Akan dipakai di [page/section] dan interact dengan [other components]
+**Component details:**
+- Name: [specific component name]
+- Purpose: [why this component needed]  
+- Where used: [which page/section of app]
 
-**Requirements:**
-Visual:
-- Layout: [describe layout - flex/grid/custom]
-- Style: [modern/minimal/colorful] dengan color scheme [colors]
-- Responsive: [mobile-first/desktop-first behavior]
+**User experience:**
+- What user sees: [visual elements]
+- What user can do: [interactions available]
+- What happens after interaction: [expected response]
 
-Functional:
-- User bisa [list all user actions]
-- Component state: [what changes when user interact]
-- Data flow: [props in, events out]
-
-Validation:
-- Input rules: [required fields, format validation]
-- Error handling: [inline errors, toast notifications]
-
-**User Experience:**
-- Happy path: User [describe normal flow]
-- Loading state: Show [loading indicator/skeleton]
-- Error state: Display [error message/retry button]
-
-**Technical Specs:**
-- Framework: [your choice]
-- Styling: Tailwind CSS dengan responsive design
-- State: [useState/useReducer/context]
-
-**Output:** 
-1. Complete functional component dengan PropTypes
-2. CSS/Tailwind classes dengan responsive breakpoints  
-3. Usage example dengan sample data
-4. Accessibility considerations
-```
-
-#### 🛠️ Template untuk API Development
-
-**⚙️ API Endpoint Prompt Structure:**
-```
-**Endpoint:** [HTTP method + URL pattern]
-**Purpose:** [What business logic it handles]
-**Authentication:** [Required auth level]
+**Technical context:**
+- My skill level: Pemula yang paham basic HTML/CSS/JS
+- Target device: [Mobile-first/Desktop/Both]
+- Style preference: [Clean/Modern/Simple]
 
 **Request:**
-- Headers: [required headers]
-- Parameters: [URL params, query params]  
-- Body: [request payload structure]
-- Validation: [input validation rules]
+1. Describe optimal layout dan visual design
+2. List HTML elements yang dibutuhkan  
+3. Suggest CSS approach untuk styling
+4. Basic JavaScript untuk interactivity
+5. Mobile responsiveness considerations
 
-**Response:**
-- Success: [HTTP status + response structure]
-- Errors: [possible error codes + error format]
-- Data format: [JSON structure dengan examples]
-
-**Business Logic:**
-- Processing steps: [what happens internally]
-- Database operations: [CRUD operations needed]
-- External services: [third-party API calls]
-
-**Security & Performance:**
-- Rate limiting: [requests per time period]
-- Data sanitization: [input cleaning rules]
-- Caching strategy: [what to cache dan how long]
+**Output:** Complete design specification yang bisa saya implement step-by-step.
 ```
 
-**🔥 Prompt #7: API Design Assistant**
-```
-Saya butuh API endpoint untuk [describe functionality] di aplikasi [app context].
+#### 🛠️ Template untuk System Flow
 
-**Endpoint:** [HTTP method] /api/[resource]/[action]
-**Purpose:** [explain what business value this provides]
-**Authentication:** [none/basic/JWT/OAuth level required]
+**🔄 System Flow Request Template:**
+```
+**Process:** [Nama proses yang mau di-design]
+**Trigger:** [Apa yang start proses ini]
+**End goal:** [Hasil yang diharapkan]
+
+**Current situation:** [Gimana sekarang atau masalahnya apa]
+**Desired flow:** [Gimana seharusnya process jalan]
+
+**Constraints:** [Limitation yang perlu dipertimbangkan]
+```
+
+**🔥 Prompt Template #9: System Flow Designer**
+```
+Help me design system flow untuk [specific process] di aplikasi saya.
+
+**Process context:**
+- What happens: [describe the process]
+- Who's involved: [user types atau systems involved]
+- When it triggers: [conditions yang start process]
+- Success outcome: [what good completion looks like]
+
+**Current challenges:**
+- What's confusing: [pain points dalam current flow]
+- Where users get stuck: [common failure points]  
+- What takes too long: [inefficient steps]
+
+**Design requirements:**
+- Keep it simple untuk pemula implement
+- Mobile-friendly interactions
+- Clear feedback untuk user di setiap step
+- Error handling untuk common mistakes
 
 **Request:**
-Headers: [Content-Type, Authorization, custom headers]
-Parameters: 
-- Path: [id, slug, etc]
-- Query: [filtering, pagination, sorting]
-Body: [JSON structure for POST/PUT requests]
+1. Step-by-step flow diagram
+2. Decision points dan alternative paths
+3. Error handling dan recovery options  
+4. Implementation suggestions untuk each step
+5. Testing scenarios untuk validate flow
 
-Validation rules:
-- Required fields: [list fields]
-- Format validation: [email, phone, date formats]
-- Business rules: [custom validation logic]
-
-**Response:**
-Success scenarios:
-- 200: [successful retrieval/update]
-- 201: [successful creation]  
-- 204: [successful deletion]
-
-Error scenarios:
-- 400: [bad request examples]
-- 401: [unauthorized access]
-- 404: [resource not found]
-- 422: [validation errors]
-- 500: [server errors]
-
-**Business Logic:**
-1. [step 1 of processing]
-2. [step 2 of processing]
-3. [etc...]
-
-Database operations: [what tables/collections involved]
-External APIs: [third-party services needed]
-
-**Security & Performance:**
-- Rate limit: [requests per minute/hour]
-- Input sanitization: [XSS prevention, SQL injection]
-- Response caching: [cache duration dan invalidation]
-
-**Output:**
-1. Complete API specification (OpenAPI/Swagger format)
-2. Implementation code dengan error handling
-3. Test cases untuk happy path dan edge cases
-4. Documentation dengan usage examples
+**My context:** Awam developer yang fokus pada user experience dan simple implementation.
 ```
 
-#### ⚡ Pro Tips: System Design dengan AI
+#### ⚡ Pro Tips: Design dengan AI
 
-> **💡 Tips #7:** Start dengan "Data Flow Diagram" - minta AI gambar flow data dari user action sampai response
+> **💡 Tips #13:** Always specify your skill level - AI will adjust complexity accordingly
 
-> **💡 Tips #8:** Use "Layered Approach" - UI layer, business logic layer, data layer - design satu per satu
+> **💡 Tips #14:** Ask for "why" behind design decisions - builds your design intuition
 
-> **💡 Tips #9:** Always consider "Error Boundaries" - apa yang terjadi kalau something goes wrong
+> **💡 Tips #15:** Request alternatives - "Give me 2-3 different approaches" untuk compare options
+
+---
+
+### 🔗 **Bagian 6: Build Reusable AI Workflows**
+
+#### 💡 Konsep: Create Your Personal AI Assistant Patterns
+
+Setelah comfortable dengan basic prompting, sekarang waktunya bikin **workflow yang bisa dipakai berulang**. Think of it sebagai recipe book untuk development tasks.
+
+#### 🛠️ Your First Workflow: "Feature Development Recipe"
+
+**Step 1: Planning Session**
+```
+Saya mau implement feature baru: [feature name]
+
+Context saya:
+- Current app status: [what's already working]  
+- New feature goal: [what this feature should accomplish]
+- User benefit: [why users need this]
+- My skill level: [current abilities]
+
+Phase 1 - Requirements:
+1. Help me understand semua requirements untuk feature ini
+2. Break down jadi user stories yang simple
+3. Identify potential challenges untuk pemula
+4. Suggest simplified version untuk MVP
+
+Ask me questions kalau ada yang kurang jelas tentang feature ini.
+```
+
+**Step 2: Technical Design**  
+```
+Perfect! Based on requirements tadi:
+
+[Paste AI response dari step 1]
+
+Phase 2 - Technical approach:
+1. Suggest simple technical approach yang sesuai skill level saya
+2. List components atau functions yang perlu dibuat
+3. Design data structure kalau ada data yang perlu disimpan
+4. Plan integration dengan existing app parts
+5. Estimate complexity dan timeline realistic
+
+Focus on: Simple solution yang working, nggak perlu perfect atau elegant.
+```
+
+**Step 3: Implementation Guide**
+```
+Great! Now dengan technical design:
+
+[Paste AI response dari step 2]
+
+Phase 3 - Implementation:  
+1. Break implementation jadi daily tasks
+2. Provide step-by-step coding guide untuk task pertama
+3. Include testing approach untuk verify functionality
+4. Suggest debugging strategies kalau ada issues
+5. Plan integration dan testing dengan existing features
+
+Goal: Clear roadmap yang bisa saya follow untuk complete feature implementation.
+```
+
+#### 🔄 Workflow Template untuk Bug Fixing
+
+**Bug Analysis & Fix Workflow:**
+```
+**Step 1: Bug Description**
+I have a bug dalam aplikasi saya:
+
+Expected behavior: [what should happen]  
+Actual behavior: [what actually happens]
+Error message: [exact error if any]
+When it happens: [specific conditions]
+Code yang suspect: [relevant code section]
+
+Help me analyze this systematically.
+
+**Step 2: Root Cause Analysis**  
+[After AI analyzes, ask:]
+Based on analysis tadi, walk me through debugging process step-by-step.
+
+**Step 3: Fix Implementation**
+[After understanding root cause:]
+Provide fixed code dengan explanation of what changed dan why.
+```
+
+#### 💾 Save Your Successful Workflows
+
+**Create Personal Prompt Library:**
+```markdown
+# My AI Development Workflows
+
+## Feature Development (3-step)
+1. Planning: [paste successful planning prompt]
+2. Design: [paste technical design prompt]  
+3. Implementation: [paste implementation prompt]
+
+## Bug Fixing (3-step)  
+1. Analysis: [paste bug analysis prompt]
+2. Debug: [paste debugging prompt]
+3. Fix: [paste fix implementation prompt]
+
+## Learning New Tech (2-step)
+1. Overview: [paste learning overview prompt]
+2. Practice: [paste hands-on practice prompt]
+```
+
+#### ⚡ Pro Tips: Workflow Building
+
+> **💡 Tips #16:** Document what works - save successful prompts untuk reuse later
+
+> **💡 Tips #17:** Customize untuk your style - adjust templates based on your learning preferences  
+
+> **💡 Tips #18:** Share dan get feedback - successful workflows can help other beginners too
 
 ---
 
 ## 🧪 Hands-on Practice
 
-### 🔨 **Guided Practice 1: Warm-up dengan AI Prompting (20 menit)**
+### 🔨 **Progressive Practice: Build Complete Web App Step by Step (3 hours)**
 
-**🎯 Goal:** Latihan basic prompting sebelum project besar. Bikin confidence dulu!
+Sekarang waktunya apply SEMUA yang udah dipelajari dalam satu project comprehensive!
 
-#### 📝 Exercise 1.1: Setup AI Assistant (5 menit)
-1. **Buka ChatGPT atau Claude** di browser baru
-2. **Copy-paste prompt setup ini persis:**
-```
-Hai! Saya seorang pemula yang sedang belajar prompt engineering untuk coding. 
+#### 🎯 **Project: Personal Expense Tracker**
+**Why this project:** Real-world useful, covers all major concepts, achievable untuk awam
 
-Tolong jadi mentor coding yang sabar dan supportive. Kalau saya bertanya:
-1. Explain dalam bahasa yang mudah dipahami
-2. Kasih contoh konkret  
-3. Step-by-step instructions
-4. Tanya saya kalau ada yang kurang jelas
+**What you'll build:**
+- ✅ Add/edit/delete expenses  
+- ✅ Categories (Food, Transport, Entertainment, etc)
+- ✅ Date tracking dan monthly summaries
+- ✅ Simple charts/visualizations
+- ✅ Data export functionality
+- ✅ Mobile-responsive design
+- ✅ Data persistence (localStorage)
 
-Siap membantu saya belajar?
-```
-3. **Tunggu response AI** dan pastikan tone-nya supportive
-4. ✅ **Check:** AI respond dengan ramah dan ready to help
-
-#### 📝 Exercise 1.2: Test Basic Prompting (15 menit)
-
-**Round 1: Concept Explanation (5 menit)**
-```
-Saya bingung apa bedanya frontend dan backend dalam web development. 
-
-Tolong jelaskan:
-1. Apa itu frontend dan backend dengan analogi yang mudah dipahami
-2. Contoh teknologi untuk masing-masing
-3. Gimana mereka kerja sama untuk bikin website
-
-Pakai bahasa yang simple ya, saya masih awam banget.
-```
-
-**✅ Expected Output:** AI kasih penjelasan dengan analogi (misal: frontend = tampak depan toko, backend = gudang di belakang)
-
-**Round 2: Simple Code Request (5 menit)**
-```
-Saya mau bikin HTML button yang kalau diklik, text nya berubah dari "Click Me" jadi "Clicked!"
-
-Requirements:
-- Pakai HTML dan JavaScript
-- Code yang simple untuk pemula
-- Explain setiap baris code
-- Kasih tau cara test di browser
-
-Bikin yang paling basic dulu ya.
-```
-
-**✅ Expected Output:** Working HTML dengan inline JavaScript + penjelasan detail
-
-**Round 3: Code Improvement (5 menit)**
-```
-Code button yang tadi sudah jalan! Sekarang saya mau improve:
-
-1. Kalau diklik lagi, text kembali ke "Click Me" (toggle function)
-2. Tambahin CSS yang bikin button kelihatan lebih menarik
-3. Explain perubahan yang dibuat
-
-Keep it simple untuk pemula ya!
-```
-
-**✅ Expected Output:** Improved code dengan toggle function + basic CSS
+**⏰ Timeline:** 3 hours total dengan breaks
+- 30 menit: PRD creation dan planning
+- 60 menit: Basic functionality (CRUD operations)  
+- 60 menit: Enhanced features (categories, summaries, charts)
+- 30 menit: Polish, testing, dan documentation
 
 ---
 
-### 🔨 **Main Project: Personal Task Manager dengan AI Collaboration (90 menit)**
+#### 📋 **Phase 1: PRD Creation dan Strategic Planning (30 menit)**
 
-**🎯 Goal:** Build complete task manager app step-by-step dengan AI guidance. **Realistic timeline untuk awam!**
-
-**📋 What You'll Build:**
-- ✅ Task creation form
-- ✅ Task list dengan priority colors  
-- ✅ Mark complete/incomplete functionality
-- ✅ Delete tasks
-- ✅ Filter by status (all/completed/pending)
-- ✅ Data persist di localStorage
-
-**⏰ Realistic Time Breakdown:**
-- 20 menit: PRD creation dan planning
-- 25 menit: Basic HTML structure  
-- 30 menit: JavaScript functionality step-by-step
-- 10 menit: CSS styling untuk make it pretty
-- 5 menit: Testing dan final polish
-
-#### 📝 Step 1: PRD Creation dan Planning (20 menit)
-
-**Sub-step 1.1: Generate PRD (10 menit)**
-
-**Copy prompt ini ke AI:**
+**Step 1.1: Create PRD dengan AI (15 menit)**
 ```
-Saya seorang pemula yang mau bikin aplikasi task manager personal. 
+Saya seorang awam yang mau bikin aplikasi expense tracker personal.
 
-Context:
-- Saya freelancer yang sering lupa task dan deadline
-- Mau something simple yang bisa dipakai sehari-hari  
-- Nggak butuh fitur fancy, just basic task management
-- Will be used on laptop dan phone
+**Problem saya:**
+- Sering lupa udah spend berapa untuk kategori tertentu (makan, transport, dll)
+- Susah track pengeluaran harian dan bulanan
+- Aplikasi yang ada terlalu kompleks atau berbayar
+- Butuh something simple yang bisa access dari HP
 
-Tolong buatkan PRD (Product Requirements Document) yang include:
-1. Problem statement yang jelas
-2. Core features (maksimal 5 features untuk v1)
-3. User journey dari buka app sampai selesai manage tasks
-4. Success criteria yang realistis
+**Target users:** 
+- Pribadi dan teman-teman yang mau better financial awareness
+- Usia 20-35, pakai smartphone, nggak suka app yang ribet
 
-Bikin yang simple tapi comprehensive. Anggap saya akan pakai PRD ini untuk development dengan AI assistance.
+Tolong buatkan PRD yang:
+1. Focus pada problem solving yang real
+2. Simple tapi useful untuk daily use
+3. Achievable untuk pemula dalam 2-3 hari development
+4. Clear success metrics yang bisa diukur
+
+Pakai template yang easy to follow dan actionable.
 ```
 
-**✅ Expected Output:** PRD lengkap yang fokus pada essential features
-
-**Sub-step 1.2: Technical Planning (10 menit)**
-
-**Copy prompt ini ke AI:**
+**Step 1.2: Feature Breakdown dengan KECIL Method (15 menit)**  
 ```
-Based on PRD yang tadi, sekarang help me plan technical implementation.
+Based on PRD yang tadi:
 
-Context:
-- Saya pemula dengan basic HTML/CSS/JavaScript
-- Mau bikin single page application (no framework dulu)
-- Data disimpan di localStorage browser
-- Must work di mobile dan desktop
+[Paste PRD result here]
 
-Tolong breakdown jadi:
-1. File structure (file apa aja yang dibutuhkan)
-2. HTML elements yang perlu dibuat
-3. CSS classes untuk styling
-4. JavaScript functions yang dibutuhkan
-5. Data structure untuk store tasks
+Sekarang break down jadi tasks menggunakan pendekatan KECIL:
 
-Bikin planning yang step-by-step dan easy to follow.
+**K**onkret: Specific dan measurable tasks
+**E**stimatable: Realistic time estimates untuk pemula  
+**C**ompletable: Bisa selesai dalam 1-2 hari max per task
+**I**ndependent: Nggak depend ke tasks lain  
+**L**earnable: Ada resources untuk belajar kalau stuck
+
+**Context saya:**
+- Available time: 3 jam hari ini, 2-3 jam besok
+- Skill: Basic HTML/CSS/JS dari module sebelumnya
+- Goal: Working app yang bisa dipake sendiri end of week
+
+Please create prioritized task breakdown dengan daily schedule yang realistic.
 ```
 
-**✅ Expected Output:** Complete technical breakdown dengan file structure
+---
 
-#### 🏗️ Step 2: Build HTML Structure (25 menit)
+#### 🏗️ **Phase 2: Core Development - CRUD Operations (60 menit)**
 
-**Sub-step 2.1: Create Basic HTML (15 menit)**
-
-**Copy prompt ini ke AI:**
+**Step 2.1: Setup Project Structure (15 menit)**
 ```
-Sekarang saya mau mulai coding HTML structure untuk task manager.
+Mulai implementation dari planning tadi. Help me setup project structure yang proper.
 
-Based on planning tadi, tolong generate:
+**Planning reference:**
+[Paste task breakdown hasil from previous step]
 
-1. Complete HTML file dengan semantic structure
-2. Form untuk add new task (input field + submit button)
-3. Area untuk display task list  
-4. Filter buttons (All, Pending, Completed)
-5. Basic meta tags dan mobile viewport
+**Setup request:**
+1. File structure yang organized (HTML, CSS, JS separation)
+2. HTML boilerplate dengan semantic elements
+3. CSS starter template dengan mobile-first approach  
+4. JavaScript module structure untuk different features
+5. Basic development setup (live reload, etc)
 
-Requirements:
-- Clean, semantic HTML5
-- Include proper IDs dan classes untuk styling nanti
-- Mobile-friendly structure
-- Comments di code untuk explain setiap section
+**My context:**
+- Will code di VS Code atau text editor simple
+- Want to understand setiap file purpose dan structure
+- Plan to host di GitHub Pages atau similar free hosting
 
-Bikin yang organized dan mudah dipahami pemula.
-```
-
-**✅ Expected Output:** Complete HTML file dengan proper structure
-
-**Sub-step 2.2: Test HTML Structure (10 menit)**
-
-1. **Create file baru:** `task-manager.html`
-2. **Copy-paste HTML** yang dikasih AI
-3. **Buka file di browser** untuk lihat structure
-4. **Screenshot hasil** untuk dokumentasi
-5. ✅ **Check:** HTML render properly tanpa error
-
-#### 💻 Step 3: Add JavaScript Functionality (30 menit)
-
-**Sub-step 3.1: Basic Task Operations (15 menit)**
-
-**Copy prompt ini ke AI:**
-```
-Sekarang saya mau add JavaScript functionality untuk task manager.
-
-Phase 1 - Basic operations:
-1. Add new task function
-2. Display tasks in list
-3. Mark task as complete/incomplete
-4. Delete task function
-
-Requirements:
-- Vanilla JavaScript (no libraries)
-- Task object structure: {id, text, completed, priority, createdAt}
-- Store di array dan localStorage
-- Update UI setelah every operation
-- Detailed comments untuk explain logic
-
-Bikin code yang modular dengan separate functions. Start dengan yang paling basic dulu.
-
-HTML structure saya: [paste HTML structure yang udah dibuat]
+Provide complete project skeleton dengan clear explanations.
 ```
 
-**✅ Expected Output:** JavaScript dengan core CRUD operations
-
-**Sub-step 3.2: LocalStorage Integration (15 menit)**
-
-**Copy prompt ini ke AI:**
+**Step 2.2: Build Add Expense Functionality (20 menit)**
 ```
-Perfect! Basic operations udah jalan. Sekarang saya mau add localStorage untuk persist data.
+Now implement core feature: add new expense.
 
-Need help dengan:
-1. Save tasks to localStorage setiap ada perubahan
-2. Load tasks dari localStorage saat page load
-3. Handle empty localStorage (first time user)
-4. Error handling kalau localStorage nggak available
+**Feature requirements dari planning:**
+- Form dengan: amount, description, category, date
+- Input validation untuk prevent errors  
+- Save to localStorage untuk persistence
+- Update display immediately after add
+- Mobile-friendly form design
 
-Requirements:
-- Functions: saveToStorage(), loadFromStorage()
-- JSON stringify/parse untuk convert data
-- Try-catch error handling
-- Initialize app dengan data yang persisted
+**Development approach:**
+1. HTML form dengan proper inputs dan validation
+2. JavaScript function untuk handle form submission
+3. Data structure design untuk storing expenses
+4. LocalStorage integration untuk data persistence  
+5. Basic error handling dan user feedback
 
-Improve code yang udah ada dengan localStorage functionality.
+**Request:**
+- Step-by-step implementation dengan detailed comments
+- Explain decision behind each technical choice
+- Include testing instructions untuk verify functionality
+- Mobile-responsive form design
 
-Current JavaScript code: [paste current JS code]
-```
-
-**✅ Expected Output:** Complete localStorage integration
-
-#### 🎨 Step 4: CSS Styling (10 menit)
-
-**Copy prompt ini ke AI:**
-```
-Sekarang saya mau bikin task manager kelihatan bagus dengan CSS.
-
-Requirements:
-- Clean, modern design
-- Mobile-responsive (mobile-first approach)
-- Color coding untuk task priorities
-- Hover effects untuk interactivity
-- Completed tasks dengan strikethrough style
-- Nice spacing dan typography
-
-Target style:
-- Minimalist tapi engaging
-- Easy to use di mobile
-- Professional look
-- Accessible (good contrast)
-
-Tolong generate CSS yang comprehensive dan organized.
-
-Current HTML structure: [paste HTML with classes]
+Focus: Working functionality over perfect code - saya bisa refactor later.
 ```
 
-**✅ Expected Output:** Complete CSS dengan responsive design
-
-#### ✅ Step 5: Testing & Polish (5 menit)
-
-**Manual Testing Checklist:**
-- [ ] **Add task:** Ketik task baru, klik Add → task muncul di list
-- [ ] **Mark complete:** Klik checkbox → task ada strikethrough
-- [ ] **Delete task:** Klik delete button → task hilang dari list  
-- [ ] **Filter functionality:** Klik All/Pending/Completed → filter working
-- [ ] **LocalStorage:** Refresh page → tasks masih ada
-- [ ] **Mobile responsive:** Buka di phone → layout proper
-- [ ] **Error handling:** Add empty task → proper error message
-
-**Quick Fixes dengan AI:**
+**Step 2.3: Display dan Delete Expenses (25 menit)**
 ```
-Saya test task manager dan found these issues:
-[list any bugs or improvements needed]
+Great! Add functionality working. Now implement display dan delete:
 
-Tolong provide quick fixes untuk issues ini. Keep solutions simple dan focused.
+**Display requirements:**
+- Show all expenses dalam organized list/table
+- Include semua details: date, amount, category, description
+- Sort by date (newest first) by default
+- Mobile-friendly display format
+
+**Delete functionality:**
+- Delete button for each expense entry
+- Confirmation before delete (prevent accidents)  
+- Update display immediately after delete
+- Update localStorage after delete
+
+**Implementation request:**
+1. Dynamic HTML generation untuk expense list
+2. Event handling untuk delete buttons
+3. Data manipulation functions (find, remove from array)
+4. UI feedback untuk user actions
+5. Error handling kalau ada issues
+
+**Testing scenarios:**
+- Add multiple expenses, verify display
+- Delete from middle of list, verify data integrity  
+- Refresh page, verify data persists
+- Try edge cases (delete all, empty list display)
+
+Provide working code dengan comprehensive testing approach.
 ```
 
-### ✅ **Final Deliverables:**
-- [ ] **task-manager.html** - Complete working task manager
-- [ ] **Screenshots** - App working di desktop dan mobile
-- [ ] **Learning journal** - What you learned dari each step
-- [ ] **Improvement ideas** - List features untuk next version
+---
 
-### 🎯 **Success Metrics:**
-- ✅ App working completely tanpa bugs
-- ✅ Data persist setelah browser refresh  
-- ✅ Responsive di mobile dan desktop
-- ✅ You understand setiap piece of code yang digenerate
-- ✅ You feel confident untuk improve app sendiri
+#### ⭐ **Phase 3: Enhanced Features (60 menit)**
 
-### 🚀 **Bonus Challenges (Optional):**
-- [ ] **Add priorities:** High/Medium/Low dengan color coding
-- [ ] **Due dates:** Add date picker untuk deadlines
-- [ ] **Search function:** Filter tasks by text search
-- [ ] **Export data:** Download tasks sebagai JSON file
-- [ ] **Dark mode:** Toggle light/dark theme
-
-**Kalau stuck di bonus challenges:**
+**Step 3.1: Categories dan Filtering (20 menit)**
 ```
-Saya mau implement [feature name] di task manager saya.
+Core CRUD working great! Now add categories dan filtering:
 
-Current app status: [describe what's working]
-Feature goal: [what you want to add]
-My current skill level: [beginner/learning]
+**Category features:**
+- Predefined categories: Food, Transport, Shopping, Entertainment, Bills, Other
+- Color coding untuk visual differentiation
+- Category selector dalam add form
+- Filter expenses by category
 
-Tolong guide step-by-step untuk add feature ini tanpa break existing functionality.
+**Filtering features:**  
+- "All" untuk show semua expenses
+- Category-specific filters  
+- Date range filtering (This week, This month, Custom)
+- Quick stats per category
+
+**Implementation approach:**
+1. Enhance data structure dengan category field
+2. Add category selector to form (dropdown atau buttons)
+3. Implement filtering functions untuk different criteria
+4. Update display untuk show filtered results
+5. Add category-based color coding dalam expense list
+
+Focus on: User experience - easy to add categories, intuitive filtering, clear visual feedback.
+
+Include migration strategy untuk existing data (if any) dan testing scenarios.
 ```
+
+**Step 3.2: Monthly Summaries dan Statistics (25 menit)**
+```
+Perfect! Categories working well. Now add summary features:
+
+**Summary features:**
+- Monthly total spending
+- Spending by category breakdown  
+- Daily average spending
+- Highest expense tracking
+- Comparison dengan previous month (if data available)
+
+**Visual presentation:**
+- Simple charts atau visual representations (dapat use Chart.js atau manual dengan CSS)
+- Monthly spending trends
+- Category breakdown (pie chart atau bar chart)
+- Key insights dalam readable format
+
+**Implementation:**
+1. Data aggregation functions untuk calculate summaries
+2. Date manipulation untuk monthly grouping
+3. Visual representation (charts atau CSS-based visualization)
+4. Interactive elements untuk drill-down details  
+5. Export summary data functionality
+
+**User experience:**
+- Summary should be prominent tapi nggak overwhelming
+- Easy navigation between different time periods
+- Clear labeling dan formatting untuk numbers
+- Mobile-optimized charts dan summaries
+
+Request: Implementation yang balance between functionality dan simplicity.
+```
+
+**Step 3.3: Data Export dan Advanced Features (15 menit)**
+```
+Excellent progress! Final features untuk make app production-ready:
+
+**Export functionality:**
+- Export to CSV untuk spreadsheet analysis
+- Export to JSON untuk backup purposes
+- Date range selection untuk exports
+- Category filtering untuk partial exports
+
+**Advanced UX features:**
+- Dark/light mode toggle
+- Search functionality untuk find specific expenses
+- Bulk operations (select multiple, delete, categorize)
+- Quick add dengan keyboard shortcuts
+- Offline functionality validation
+
+**Polish features:**
+- Loading indicators untuk any processing
+- Success/error messages untuk user feedback  
+- Improved mobile navigation
+- Accessibility improvements (keyboard navigation, screen reader support)
+
+**Implementation priority:**
+1. CSV export (most useful untuk users)
+2. Search functionality  
+3. Dark mode toggle
+4. UI polish dan accessibility
+5. Advanced features as time permits
+
+Goal: Production-ready app yang users would actually want to use regularly.
+```
+
+---
+
+#### ✨ **Phase 4: Testing, Polish, dan Documentation (30 menit)**
+
+**Step 4.1: Comprehensive Testing (20 menit)**
+```
+Time untuk thorough testing dan bug fixes:
+
+**Functionality testing checklist:**
+- [ ] Add expense dengan semua field combinations
+- [ ] Edit existing expenses (if implemented)  
+- [ ] Delete expenses dan verify data integrity
+- [ ] Category filtering dan switching
+- [ ] Date filtering dengan edge cases
+- [ ] Summary calculations accuracy
+- [ ] Export functionality dengan different filters
+- [ ] Data persistence across browser sessions
+
+**User experience testing:**
+- [ ] Mobile responsiveness di different screen sizes
+- [ ] Touch interactions pada mobile devices  
+- [ ] Loading states dan error handling
+- [ ] Accessibility dengan keyboard navigation
+- [ ] Performance dengan large datasets (100+ expenses)
+
+**Edge case testing:**
+- [ ] Empty states (no expenses, no data untuk selected filter)
+- [ ] Invalid input handling dalam forms
+- [ ] Browser compatibility (Chrome, Firefox, Safari, mobile browsers)
+- [ ] Data corruption scenarios (malformed localStorage data)
+
+**Bug fixing approach:**
+For any issues found, help me debug systematically:
+1. Identify root cause  
+2. Provide fix dengan explanation
+3. Test fix thoroughly
+4. Document fix untuk future reference
+
+Create comprehensive testing checklist dengan expected behaviors.
+```
+
+**Step 4.2: Documentation dan Deployment Prep (10 menit)**
+```
+Final step: Documentation dan prepare untuk deployment:
+
+**User documentation:**
+1. Quick start guide untuk new users
+2. Feature overview dengan screenshots
+3. Tips untuk effective expense tracking
+4. FAQ untuk common questions
+5. Data backup/restore instructions
+
+**Developer documentation:**
+1. Code architecture explanation
+2. File structure dan purpose of each component
+3. Key functions dan their responsibilities  
+4. Future enhancement ideas
+5. Known limitations dan potential improvements
+
+**Deployment preparation:**
+1. Optimize file sizes dan performance
+2. Test pada different devices dan browsers
+3. Prepare untuk GitHub Pages atau similar hosting
+4. Create professional README dengan project overview
+5. Add demo screenshots dan live link
+
+**Portfolio preparation:**
+- Project showcase untuk portfolio
+- Case study write-up tentang development process
+- Learning reflections dan skills demonstrated
+- Next steps untuk project enhancement
+
+Goal: Complete, documented, deployable web application yang showcase kemampuan development dengan AI assistance.
+```
+
+---
+
+### ✅ **Success Validation & Portfolio Building**
+
+#### 🎯 **Core Success Criteria:**
+- [ ] **Functional App:** All major features working without bugs
+- [ ] **Data Persistence:** Expenses saved dan loaded correctly  
+- [ ] **Mobile Ready:** Responsive design yang usable di smartphone
+- [ ] **User Friendly:** Intuitive interface yang orang lain bisa pakai
+- [ ] **Professional Quality:** Code organized, documented, deployable
+
+#### 📊 **Advanced Success Criteria:**
+- [ ] **Performance:** Fast loading even dengan 50+ expense entries
+- [ ] **Accessibility:** Keyboard navigation dan screen reader compatible
+- [ ] **Export Function:** CSV export working dengan proper formatting
+- [ ] **Visual Design:** Attractive, modern appearance dengan consistent styling
+- [ ] **Error Handling:** Graceful handling of edge cases dan user errors
+
+#### 🌟 **Mastery Indicators:**
+- [ ] **Independent Problem Solving:** Fixed bugs tanpa extensive AI help
+- [ ] **Code Understanding:** Can explain how each major function works
+- [ ] **User Thinking:** Made UX decisions based on actual user needs  
+- [ ] **Professional Workflow:** Used proper development process dari planning ke deployment
+- [ ] **Teaching Others:** Can walk someone through app features dan development process
+
+### 🚀 **Portfolio Enhancement:**
+
+**Document Your Journey:**
+```markdown
+# Personal Expense Tracker - Development Case Study
+
+## Project Overview
+[Brief description of app dan its purpose]
+
+## Problem Solved
+[Real user problem this app addresses]
+
+## Technologies Used  
+- HTML5 untuk semantic structure
+- CSS3 dengan mobile-first responsive design
+- Vanilla JavaScript untuk functionality
+- LocalStorage untuk data persistence  
+- Chart.js untuk data visualization
+
+## Development Process
+1. **PRD Creation:** [How you planned the project]
+2. **Feature Breakdown:** [How you organized development tasks]  
+3. **AI Collaboration:** [How you used AI assistance effectively]
+4. **Testing Strategy:** [How you ensured quality]
+
+## Key Features
+- [List major features dengan brief descriptions]
+
+## Challenges & Solutions
+- [Document interesting problems you solved]
+
+## Future Enhancements
+- [Ideas untuk version 2.0]
+
+## Demo
+- [Live link dan screenshots]
+```
+
+**Skills Demonstrated:**
+- ✅ **AI-Assisted Development:** Strategic use of AI untuk accelerate development
+- ✅ **Full-Stack Thinking:** Frontend, data management, user experience  
+- ✅ **Mobile Development:** Responsive design dan mobile user experience
+- ✅ **Project Management:** Planning, breakdown, execution, testing
+- ✅ **User-Centered Design:** Building untuk real user needs
+- ✅ **Professional Workflow:** Documentation, testing, deployment readiness
 
 ---
 
@@ -725,84 +1023,58 @@ Tolong guide step-by-step untuk add feature ini tanpa break existing functionali
 
 | ❌ Problem | ✅ Solution | 🛠️ Prevention |
 |------------|-------------|---------------|
-| **AI gives generic/vague responses** | Add more specific context, examples, dan constraints dalam prompt | Always include: your skill level, tech stack, specific goals, dan success criteria |
-| **Code works in isolation tapi nggak terintegrasi** | Ask AI untuk integration testing dan component communication | Design component interfaces dulu sebelum implement details |
-| **AI suggests overly complex solutions** | Explicitly mention "keep it simple" dan "beginner-friendly approach" | Include constraint: "solution should be understandable by someone learning to code" |
-| **Inconsistent coding style across AI sessions** | Create "style guide prompt" yang consistent untuk semua sessions | Save successful prompts sebagai templates untuk reuse |
-| **Getting stuck dalam prompt engineering** | Break down complex requests jadi smaller, focused prompts | Use progressive disclosure - start broad, add specifics gradually |
-| **AI hallucinates atau give outdated info** | Always verify suggestions dengan official docs atau testing | Cross-reference AI suggestions dengan 2-3 reliable sources |
+| **AI gives generic responses** | Be very specific tentang context, skill level, dan expected output | Always mention "saya awam" dan "step-by-step please" |
+| **Overwhelmed with complex suggestions** | Ask untuk "simplest possible solution for beginner" | Set expectation: "saya baru belajar, keep it basic" |  
+| **Code works in tutorial but not in practice** | Ask AI untuk debug specific error dengan exact code | Always test each step before moving to next |
+| **Stuck dan nggak tau what to ask** | Use workflow templates dari module ini | Save successful prompts untuk reuse |
+| **AI suggestions nggak match skill level** | Explicitly state current knowledge dan learning goals | Be honest tentang what you do/don't understand |
+| **Feature creep - mau add terlalu banyak fitur** | Stick to PRD dan ask AI untuk validate scope | Always ask "is this essential for MVP?" |
 
-### 🆘 When to Ask for Human Help
+### 🆘 **When to Ask for Human Help:**
 
-**Red Flags yang indicate butuh human intervention:**
-- AI consistently gives conflicting advice
-- Security-related implementations (authentication, payment processing)
-- Performance issues yang complex
-- Infrastructure dan deployment challenges
-- Business logic yang very domain-specific
+**Immediate Help Needed:**
+- Security issues (handling personal financial data)  
+- Performance problems dengan large datasets
+- Complex debugging yang AI can't solve after multiple attempts
 
-**Where to Get Help:**
-- Stack Overflow untuk technical issues
-- GitHub Discussions untuk project-specific help
-- Discord communities (Buildspace, Developer DAO)
-- Reddit r/webdev, r/learningprogramming
+**Community Resources:**
+- 🌐 **freeCodeCamp Forum** - Beginner-friendly community
+- 📱 **r/webdev Reddit** - Active developer discussions  
+- 💬 **Developer Discord servers** - Real-time help dan networking
+- 📺 **YouTube coding channels** - Visual learning untuk complex concepts
 
 ---
 
 ## 📖 Referensi & Resources
 
-### 🔧 **AI Tools & Platforms yang Recommended:**
+### 🤖 **AI Tools untuk Development:**
+- 💻 **ChatGPT** (chat.openai.com) - General development assistance dan learning
+- 🧠 **Claude** (claude.ai) - Code analysis dan complex problem solving
+- 🔧 **GitHub Copilot** ($10/month) - In-editor code suggestions  
+- 📝 **Cursor** - AI-powered code editor untuk advanced workflows
 
-**Primary AI Assistants:**
-- 🤖 **ChatGPT Plus** ($20/month) - Best for PRD creation dan general development consultation
-- 🧠 **Claude Pro** ($20/month) - Superior untuk code analysis dan complex reasoning  
-- 💻 **GitHub Copilot** ($10/month) - Best in-editor code completion dan suggestions
+### 📚 **Learning Resources untuk Lanjutan:**
+- 🎓 **MDN Web Docs** (developer.mozilla.org) - Comprehensive web development reference
+- 🎥 **freeCodeCamp YouTube** - Free video courses untuk all levels
+- 📖 **JavaScript.info** - Modern JavaScript tutorial dari basic ke advanced
+- 🏃 **The Odin Project** - Full curriculum untuk web development
 
-**Specialized Development Tools:**
-- 📝 **Cursor** (Free tier available) - AI-native code editor dengan excellent context awareness
-- 🌐 **Lovable** (lovable.dev) - Generate full-stack apps dari natural language prompts
-- 🔄 **Replit Agent** (replit.com) - Complete development environment dengan AI assistance
+### 🔗 **Development Tools:**
+- 💻 **VS Code** - Free code editor dengan extensive extensions
+- 🌐 **GitHub Pages** - Free hosting untuk static websites  
+- 🎨 **CodePen** - Online playground untuk quick experiments
+- 📱 **Chrome DevTools** - Built-in browser debugging tools
 
-### 📚 **Learning Resources:**
-
-**Prompt Engineering:**
-- 📖 [Learn Prompting Guide](https://learnprompting.org) - Comprehensive prompt engineering course
-- 🎥 [Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/) - DeepLearning.AI course  
-- 📝 [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) - Official best practices
-
-**AI Development Communities:**
-- 💬 [Buildspace Discord](https://buildspace.so) - Active community untuk AI builders
-- 🐦 [AI Twitter](https://twitter.com/search?q=%23BuildInPublic%20AI) - Latest trends dan updates  
-- 📱 [Indie Hackers AI](https://www.indiehackers.com/group/ai) - Business-focused AI discussions
-
-### 🔗 **Reference Documentation:**
-
-**APIs & Integration:**
-- 🔑 [OpenAI API Docs](https://platform.openai.com/docs) - For custom AI integrations
-- 🔐 [Anthropic Claude API](https://docs.anthropic.com) - Claude integration guide
-- 🌐 [Model Context Protocol](https://modelcontextprotocol.io) - MCP specification dan examples
-
-**Development Frameworks:**
-- ⚛️ [React Docs](https://react.dev) - If using React for frontend
-- 🟢 [Node.js Guides](https://nodejs.org/en/docs/) - Backend development dengan JavaScript
-- 🎨 [Tailwind CSS](https://tailwindcss.com/docs) - For rapid UI styling
-
-### 📊 **Templates & Boilerplates:**
-
-**PRD Templates:**
-- 📋 [AI-First PRD Template](https://gist.github.com/examples) - Downloadable template
-- 🎯 [Lean Canvas for AI Products](https://canvanizer.com/new/lean-canvas) - Business model canvas
-- 📈 [User Story Mapping](https://miro.com/templates/user-story-map/) - Visual user journey planning
-
-**Code Starters:**
-- 🚀 [Next.js AI Starter](https://vercel.com/templates/next.js) - Full-stack AI app template
-- 📱 [React Component Library](https://github.com/storybookjs/storybook) - Reusable component examples
-- 🔧 [API Boilerplate](https://github.com/hagopj13/node-express-boilerplate) - Express.js starter dengan best practices
+### 📊 **Enhancement Libraries:**
+- 📈 **Chart.js** - Simple charts untuk data visualization
+- 🎨 **Tailwind CSS** - Utility-first CSS framework  
+- 📱 **PWA Starter** - Progressive Web App templates
+- 🔐 **Firebase** - Backend services untuk more advanced features
 
 ---
 
-📌 **Next:** [Module 3: Building the Product - From Prompt to Production 🏗️](module3-building-product.md)
+📌 **Next:** [Module 3: Building the Product - Frontend & Backend Implementation 🏗️](module3-building-product.md)
 
 ---
 
-*💡 **Key Takeaway:** Prompt engineering adalah skill yang bisa dipelajari dan improved over time. Start with clear structure, iterate based on results, dan always validate AI suggestions dengan testing dan research. Remember: AI is your co-pilot, bukan autopilot!*
+*💡 **Key Takeaway Module 2:** AI collaboration adalah skill yang bisa dipelajari sistematis. Start dengan conversation basic, build confidence, lalu gradually apply ke real development tasks. Yang paling penting: practice, experiment, dan jangan takut salah - AI is very patient teacher yang mau help kamu learn! 🚀*
