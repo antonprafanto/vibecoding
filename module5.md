@@ -1,7 +1,3 @@
-Baik! Saya akan **revisi total** Module 5 dengan approach **100% awam-friendly**. Saya akan fokus pada **dashboard-based solutions, no-code tools, dan AI assistance** untuk guide mereka tanpa perlu coding sama sekali.
-
----
-
 # 📈 Module 5: Optimization & Tracking - Bikin Warung Digital Makin Laris! 📊
 
 ## 📋 Ringkasan Modul
