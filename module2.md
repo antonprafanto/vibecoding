@@ -1,4 +1,4 @@
-# 🚀 Module 2: Prompting & AI Collaboration - VibeCoding Bootcamp
+# 🚀 Module 2: Prompting & AI Collaboration - Advanced Techniques for Builders 🤖
 
 ## 📋 Ringkasan Modul
 Setelah setup foundation di Module 1, sekarang waktunya belajar **"ngobrol" dengan AI untuk bikin aplikasi**! Module ini dirancang khusus untuk awam total yang belum pernah berkomunikasi dengan AI untuk development. Kita akan mulai dari conversation basic, lalu step-by-step naik ke level yang lebih advanced. Di akhir module, kamu akan bisa berkomunikasi dengan AI seperti seorang developer profesional!
