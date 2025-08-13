@@ -1,4 +1,4 @@
-# 🚀 Module 1: Foundations & Mindset - VibeCoding Bootcamp
+# 🚀 Module 1: Foundations & Mindset - Ngoding Bareng AI
 
 ## 🎯 Target Audience: Awam Total (Tidak Pernah Ngoding Sama Sekali)
 **Durasi:** 3-4 jam  
