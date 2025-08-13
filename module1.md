@@ -269,26 +269,26 @@ Be critical but supportive.
 
 #### 💡 Tips #1: Set Context yang Jelas
 ```
-❌ "Help me with my website"
-✅ "I'm a complete beginner building a portfolio website for freelance photography. Help me as a mentor to understand..."
+❌ "Bantu saya dengan situs web saya"
+✅ "Saya seorang pemula total yang sedang membangun situs web portofolio untuk fotografi lepas. Bantu saya sebagai mentor untuk memahami..."
 ```
 
 #### 💡 Tips #2: Specify Role yang Diinginkan
 ```
-❌ "What do you think about this design?"  
-✅ "Act as a professional UX reviewer. Critique this design and suggest improvements..."
+❌ "Menurutmu bagaimana desain ini?"
+✅ "Bertindaklah sebagai peninjau UX profesional. Kritisi desain ini dan berikan saran perbaikan..."
 ```
 
 #### 💡 Tips #3: Ask for Specific Output Format
 ```
-❌ "Give me ideas"
-✅ "Give me 5 ideas in bullet points with brief explanation for each"
+❌ "Beri saya ide"
+✅ "Beri saya 5 ide dalam bentuk poin-poin dengan penjelasan singkat untuk masing-masing"
 ```
 
 #### 💡 Tips #4: Iterate dan Follow-up
 ```
-✅ "This is helpful, now drill down into point #2..."
-✅ "Can you give example implementation for the third suggestion?"
+✅ "Ini bermanfaat, sekarang jelaskan lebih mendalam pada poin nomor 2..."
+✅ "Bisakah kamu memberikan contoh implementasi untuk saran ketiga?"
 ```
 
 ---
@@ -323,64 +323,66 @@ Mari praktik semua konsep dalam satu project real!
 **Phase 1: Problem Discovery dengan AI Mentor (8 menit)**
 
 ```
-Saya mau bikin [idea yang kamu pilih]. 
-Sebagai mentor yang berpengalaman, help me understand:
+Saya mau membuat [ide yang kamu pilih].
+Sebagai mentor yang berpengalaman, bantu saya memahami:
 
-1. Siapa exact target user untuk produk ini?
-2. Problem apa yang sebenarnya mereka alami?
-3. Gimana mereka solve problem ini sekarang?
-4. Kenapa solusi existing belum cukup baik?  
-5. Apa value proposition yang compelling?
+1. Siapa target pengguna yang tepat untuk produk ini?
+2. Masalah apa yang sebenarnya mereka alami?
+3. Bagaimana mereka menyelesaikan masalah ini saat ini?
+4. Mengapa solusi yang sudah ada belum cukup baik?
+5. Apa proposisi nilai yang benar-benar menarik?
 
-Guide saya untuk really understand the problem space.
+Bimbing saya untuk benar-benar memahami ruang permasalahan ini.
 ```
 
 **Phase 2: Solution Design dengan AI Teammate (8 menit)**
 
 ```
-Great insights! Sekarang mari design solution together:
+Wawasan yang sangat bagus! Sekarang mari kita rancang solusinya bersama:
 
-Based on problem analysis tadi, help me:
-1. Define 3 core features untuk MVP yang address masalah utama
-2. Sketch simple user journey dari problem to solution
-3. Identify potential technical challenges untuk beginner
-4. Suggest simple tech stack yang beginner-friendly
-5. Break into development phases yang manageable
+Berdasarkan analisis masalah tadi, bantu saya:
 
-Let's collaborate to make this buildable.
+1. Menentukan 3 fitur inti untuk MVP yang mengatasi masalah utama
+2. Membuat sketsa alur pengguna sederhana dari masalah hingga solusi
+3. Mengidentifikasi tantangan teknis potensial bagi pemula
+4. Menyarankan tumpukan teknologi (tech stack) sederhana yang ramah untuk pemula
+5. Membagi ke dalam fase pengembangan yang mudah dikelola
+
+Mari kita berkolaborasi agar ini benar-benar bisa dibangun.
 ```
 
 **Phase 3: Reality Check dengan AI Reviewer (6 menit)**
 
 ```
-Ini hasil planning yang kita develop:
+Ini hasil perencanaan yang sudah kita kembangkan:
 
-Problem: [summary dari phase 1]
-Solution: [summary dari phase 2]
+**Problem:** \[ringkasan dari fase 1]
+**Solution:** \[ringkasan dari fase 2]
 
-Sebagai experienced product reviewer, berikan honest assessment:
+Sebagai peninjau produk berpengalaman, berikan penilaian jujur:
 
-1. Apakah problem-solution fit sudah kuat?
-2. Scope MVP sudah realistic untuk beginner?
-3. Red flags atau risks yang perlu dipertimbangkan?
-4. What would you change atau improve?
-5. Recommended first step yang konkret?
+1. Apakah *problem-solution fit* sudah kuat?
+2. Apakah lingkup MVP sudah realistis untuk pemula?
+3. Apakah ada *red flags* atau risiko yang perlu dipertimbangkan?
+4. Apa yang akan kamu ubah atau perbaiki?
+5. Langkah pertama yang konkret yang direkomendasikan?
 
-Be brutally honest - better to know now than later.
+Bersikaplah sejujur mungkin — lebih baik tahu sekarang daripada nanti.
 ```
 
 **Phase 4: Next Action Planning (3 menit)**
 
 ```
-Based on semua insight tadi, what should be my next 3 concrete actions untuk move this project forward?
+Berdasarkan semua insight tadi, apa **3 aksi konkret selanjutnya** yang harus saya lakukan untuk memajukan proyek ini?
 
-Prioritize berdasarkan:
-- Highest impact
-- Lowest effort  
-- Beginner-friendly
-- Validasi assumption cepat
+Prioritaskan berdasarkan:
 
-Format: Specific, actionable, time-bound steps.
+* Dampak terbesar (*highest impact*)
+* Usaha paling rendah (*lowest effort*)
+* Ramah untuk pemula (*beginner-friendly*)
+* Validasi asumsi secara cepat (*quick assumption validation*)
+
+Format: Langkah yang spesifik, dapat dilakukan (*actionable*), dan terikat waktu (*time-bound*).
 ```
 
 ### ✅ Success Validation
@@ -424,128 +426,128 @@ Format: Specific, actionable, time-bound steps.
 - [ ] MVP features yang realistic
 - [ ] Next actions yang actionable
 
-### 🎯 Overall Success Metrics:
+### 🎯 Metrik Keberhasilan Secara Keseluruhan:
 ```
-Builder Readiness = Mindset × AI Skills × Planning Ability
+Kesiapan Builder = Mindset × Keterampilan AI × Kemampuan Perencanaan
 
-✅ Mindset: From "I can't" to "I can with AI"
-✅ AI Skills: Know how to use AI in different roles  
-✅ Planning: Can break idea into actionable steps
-```
-
----
-
-## 🚀 5 Ready-to-Use AI Prompts untuk Your Journey
-
-### 🔥 Prompt 1: Idea Validator
-```
-Saya punya ide [describe your idea]. Sebagai experienced entrepreneur, help me validate this:
-
-1. Is this a real problem worth solving?
-2. Who exactly would pay for this solution?
-3. What's the simplest way to test if people actually want this?
-4. What are 3 biggest risks yang bisa kill this idea?
-5. If you were me, would you pursue this? Why or why not?
-
-Be honest and constructive.
-```
-
-### 🔥 Prompt 2: Technical Guidance for Beginners
-```
-Saya complete beginner yang mau build [your project]. Guide me step by step:
-
-1. What's the absolutely simplest tech stack untuk build this?
-2. What should I learn first vs what can I skip for now?
-3. Are there no-code tools that could work for MVP?
-4. What's the realistic timeline untuk beginner like me?
-5. What are common mistakes beginners make dengan project seperti ini?
-
-Assume I know nothing about programming.
-```
-
-### 🔥 Prompt 3: Feature Prioritization
-```
-For my [project description], help me prioritize features:
-
-Current feature ideas: [list your features]
-
-Rank these based on:
-1. User impact (how much it solves the core problem)
-2. Development difficulty for beginner
-3. Time to implement  
-4. Revenue potential (if applicable)
-
-Recommend which 3 features should be in MVP dan why. What should wait for v2?
-```
-
-### 🔥 Prompt 4: Learning Path Designer
-```
-I want to build [your goal] but I'm starting from zero coding knowledge.
-
-Design a learning path for me:
-1. What skills do I absolutely need vs nice-to-have?
-2. In what order should I learn things?
-3. How much time should I dedicate to learning vs building?
-4. What resources do you recommend for each skill?
-5. How can I stay motivated during the learning process?
-
-Make it practical and beginner-friendly.
-```
-
-### 🔥 Prompt 5: Project Resurrector  
-```
-I started working on [your project] but got stuck and abandoned it.
-
-Help me restart:
-1. Analyze why I probably got stuck (common beginner pitfalls)
-2. How can I simplify this to make it more achievable?
-3. What's the smallest possible version I could ship quickly?
-4. How do I maintain momentum and not abandon it again?
-5. What's a realistic timeline to get back on track?
-
-I need practical restart strategy.
+✅ Mindset: Dari "Saya tidak bisa" menjadi "Saya bisa dengan AI"  
+✅ Keterampilan AI: Tahu cara menggunakan AI dalam berbagai peran  
+✅ Perencanaan: Bisa memecah ide menjadi langkah-langkah yang dapat ditindaklanjuti
 ```
 
 ---
 
-## 🔧 Troubleshooting: Common Beginner Blockers
+🚀 5 Prompt AI Siap Pakai untuk Perjalanan Anda
 
-### 🚨 "AI Responses Tidak Membantu"
-
-**Symptoms:** AI kasih jawaban yang generic atau nggak applicable
-**Root Cause:** Context tidak cukup specific  
-**Solution:** 
+### 🔥 Prompt 1: Validator Ide
 ```
-❌ "Help me build a website"
-✅ "I'm a yoga instructor with zero coding experience who wants to build a simple booking website for my classes. I have 5 regular students and want to start taking online bookings. Help me as a mentor..."
-```
+Saya punya ide [jelaskan ide Anda]. Sebagai pengusaha berpengalaman, bantu saya memvalidasi ini:
 
-### 🚨 "Overwhelmed dengan Options"
+1. Apakah ini masalah nyata yang layak diselesaikan?  
+2. Siapa tepatnya yang akan membayar untuk solusi ini?  
+3. Apa cara paling sederhana untuk menguji apakah orang benar-benar menginginkannya?  
+4. Apa 3 risiko terbesar yang bisa menggagalkan ide ini?  
+5. Jika Anda berada di posisi saya, apakah Anda akan mengejarnya? Mengapa atau mengapa tidak?
 
-**Symptoms:** AI kasih terlalu banyak pilihan, bingung mau pilih yang mana
-**Root Cause:** Tidak specify decision criteria  
-**Solution:**
-```
-❌ "What tools should I use?"  
-✅ "I have 2 hours per week to learn, $50 budget, and want to launch in 1 month. Recommend 1 tool yang paling sesuai dengan constraints ini."
+Bersikaplah jujur dan membangun.
 ```
 
-### 🚨 "Stuck di Planning, Nggak Mulai Building"
-
-**Symptoms:** Sudah planning berminggu-minggu tapi nggak ada progress
-**Root Cause:** Analysis paralysis, perfectionist mindset  
-**Solution:** Set timer dan force start:
+### 🔥 Prompt 2: Panduan Teknis untuk Pemula
 ```
-"I've been planning this for weeks. Give me the absolutely minimal version I can build in 2 hours this weekend. Nothing fancy, just something that works."
+Saya pemula total yang ingin membangun [proyek Anda]. Pandu saya langkah demi langkah:
+
+1. Apa tumpukan teknologi (tech stack) paling sederhana untuk membangun ini?  
+2. Apa yang harus saya pelajari terlebih dahulu dan apa yang bisa saya lewati untuk sekarang?  
+3. Apakah ada alat no-code yang bisa digunakan untuk MVP?  
+4. Berapa timeline realistis untuk pemula seperti saya?  
+5. Kesalahan umum apa yang sering dilakukan pemula dalam proyek seperti ini?
+
+Anggap saya tidak tahu apa-apa tentang pemrograman.
+```
+
+### 🔥 Prompt 3: Prioritisasi Fitur
+```
+Untuk [deskripsi proyek Anda], bantu saya memprioritaskan fitur:
+
+Ide fitur saat ini: [daftar fitur Anda]
+
+Urutkan berdasarkan:
+1. Dampak terhadap pengguna (seberapa besar menyelesaikan masalah inti)  
+2. Tingkat kesulitan pengembangan untuk pemula  
+3. Waktu implementasi  
+4. Potensi pendapatan (jika relevan)
+
+Rekomendasikan fitur mana yang harus ada di MVP dan alasannya. Apa yang sebaiknya menunggu untuk versi 2?
+```
+
+### 🔥 Prompt 4: Perancang Jalur Pembelajaran
+```
+Saya ingin membangun [tujuan Anda] tetapi saya mulai dari nol pengetahuan coding.
+
+Rancang jalur pembelajaran untuk saya:
+1. Keterampilan apa yang benar-benar wajib vs yang hanya tambahan?  
+2. Urutan belajar yang tepat seperti apa?  
+3. Berapa banyak waktu yang harus saya alokasikan untuk belajar vs membangun?  
+4. Sumber belajar apa yang Anda rekomendasikan untuk setiap keterampilan?  
+5. Bagaimana saya bisa tetap termotivasi selama proses belajar?
+
+Buatlah praktis dan ramah untuk pemula.
+```
+
+### 🔥 Prompt 5: Penghidup Kembali Proyek
+```
+Saya mulai mengerjakan [proyek Anda] tetapi terhenti dan akhirnya ditinggalkan.
+
+Bantu saya memulai kembali:
+1. Analisis mengapa saya mungkin terhenti (jebakan umum pemula)  
+2. Bagaimana saya bisa menyederhanakan ini agar lebih mudah dicapai?  
+3. Apa versi terkecil yang bisa saya rilis dengan cepat?  
+4. Bagaimana cara menjaga momentum agar tidak ditinggalkan lagi?  
+5. Timeline realistis seperti apa untuk kembali ke jalur?
+
+Saya butuh strategi restart yang praktis.
+```
+
+---
+
+## 🔧 Pemecahan Masalah: Hambatan Umum untuk Pemula
+
+### 🚨 "Respons AI Tidak Membantu"
+
+**Gejala:** AI memberikan jawaban yang terlalu umum atau tidak dapat diterapkan  
+**Penyebab Utama:** Konteks tidak cukup spesifik  
+**Solusi:** 
+```
+❌ "Bantu saya membuat situs web"
+✅ "Saya seorang instruktur yoga tanpa pengalaman coding yang ingin membuat situs web pemesanan sederhana untuk kelas saya. Saya punya 5 murid tetap dan ingin mulai menerima pemesanan online. Bantu saya sebagai mentor..."
+```
+
+### 🚨 "Terlalu Banyak Pilihan, Jadi Bingung"
+
+**Gejala:** AI memberikan terlalu banyak pilihan sehingga bingung mau pilih yang mana  
+**Penyebab Utama:** Tidak menentukan kriteria pengambilan keputusan  
+**Solusi:**
+```
+❌ "Alat apa yang harus saya gunakan?"  
+✅ "Saya hanya punya 2 jam per minggu untuk belajar, anggaran $50, dan ingin meluncurkan dalam 1 bulan. Rekomendasikan 1 alat yang paling sesuai dengan batasan ini."
+```
+
+### 🚨 "Terjebak di Perencanaan, Tidak Mulai Membangun"
+
+**Gejala:** Sudah merencanakan ber minggu-minggu tapi tidak ada kemajuan  
+**Penyebab Utama:** Terjebak analisis berlebihan (*analysis paralysis*), pola pikir perfeksionis  
+**Solusi:** Atur timer dan paksa mulai:
+```
+"Saya sudah merencanakan ini selama berminggu-minggu. Berikan saya versi seminimal mungkin yang bisa saya bangun dalam 2 jam akhir pekan ini. Tidak perlu mewah, cukup yang berfungsi."
 ```
 
 ### 🚨 "Kehilangan Motivasi"
 
-**Symptoms:** Semangat di awal tapi lama-lama males lanjutin
-**Root Cause:** No clear milestones or early wins  
-**Solution:**
+**Gejala:** Semangat di awal tapi lama-lama malas melanjutkan  
+**Penyebab Utama:** Tidak ada *milestone* yang jelas atau kemenangan kecil di awal  
+**Solusi:**
 ```
-"Break my project into daily wins. What can I accomplish each day for the next 7 days that will give me sense of progress?"
+"Pecah proyek saya menjadi kemenangan harian. Apa yang bisa saya selesaikan setiap hari selama 7 hari ke depan agar saya merasa ada kemajuan?"
 ```
 
 ---
