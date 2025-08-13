@@ -1,4 +1,4 @@
-# 🔐 Module 4: Jaga-jaga & Optimasi
+# 🔐 Module 4: Infrastructure & Security
 
 ## 📋 Ringkasan Modul
 Aplikasi warung digital kamu udah jalan di internet! 🎉 Sekarang waktunya belajar cara **"jaga-jaga"** supaya aplikasi kamu tetap aman dan hemat biaya. Think of it sebagai memasang kunci rumah dan mengatur keuangan - penting tapi nggak perlu ribet! Module ini akan ngajarin kamu cara proteksi basic dan tips hemat yang bisa dilakukan awam total dengan bantuan AI.
