@@ -1,4 +1,4 @@
-# 🔨 Modul 3: Building the Product - VibeCoding Bootcamp
+# 🔨 Module 3: Building the Product - Frontend & Backend Implementation 🏗️
 
 ## 🎯 Target Audience: Awam Total yang Sudah Paham AI Basics (dari Modul 1 & 2)
 **Durasi:** 2 jam  
